@@ -153,6 +153,100 @@ footer{
     padding: 20px;
 }
 
+/*OUTROS CARDS*/
+
+.categorias{
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.categorias h2{
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #0d6efd;
+}
+
+.categorias-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 25px;
+}
+
+.categoria-btn{
+    text-decoration: none;
+    color: #333;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,.1);
+
+    transition: all .4s ease;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.categoria-btn::before{
+
+    content: '';
+
+    position: absolute;
+
+    top: 0;
+    left: -100%;
+
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.4),
+        transparent
+    );
+
+    transition: .6s;
+}
+
+.categoria-btn:hover::before{
+    left: 100%;
+}
+
+.categoria-btn:hover{
+    transform: translateY(-12px);
+    box-shadow: 0 15px 35px rgba(13,110,253,.25);
+}
+
+.categoria-btn span{
+    font-size: 4rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.categoria-btn h3{
+    color: #0d6efd;
+    margin-bottom: 10px;
+}
+
+/* ODS */
+
+.ods{
+    background: linear-gradient(135deg,#0d6efd,#3a7cff);
+    color:white;
+    padding:80px 10%;
+    text-align:center;
+}
+
+.ods h2{
+    font-size:2.5rem;
+    margin-bottom:20px;
+}
+
 /* RESPONSIVO */
 
 @media(max-width: 768px){
@@ -170,4 +264,128 @@ footer{
         font-size: 18px;
     }
 
+}
+
+/* =========================
+   PÁGINA TECNOLOGIA
+========================= */
+
+.banner-tecnologia {
+    background: linear-gradient(135deg, #0d6efd, #3a7cff);
+    color: white;
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.banner-tecnologia h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.banner-tecnologia p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: auto;
+}
+
+.tecnologia-conteudo {
+    padding: 80px 10%;
+    background: #f8f9fa;
+}
+
+.tecnologia-conteudo h2 {
+    text-align: center;
+    color: #0d6efd;
+    margin-bottom: 50px;
+    font-size: 2.2rem;
+}
+
+.tecnologia-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.tecnologia-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+    transition: all .3s ease;
+    cursor: pointer;
+    border-top: 5px solid #0d6efd;
+}
+
+.tecnologia-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(13,110,253,.2);
+}
+
+.tecnologia-card h3 {
+    color: #0d6efd;
+    margin-bottom: 15px;
+}
+
+.tecnologia-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.tecnologia-card .icone {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* BOTÃO VOLTAR */
+
+.btn-voltar {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 12px 25px;
+    background: #0d6efd;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.btn-voltar:hover {
+    background: #0b5ed7;
+    transform: scale(1.05);
+}
+
+/* ANIMAÇÃO DE ENTRADA */
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tecnologia-card {
+    animation: aparecer .6s ease forwards;
+}
+
+.tecnologia-card{
+    text-decoration: none;
+    color: inherit;
+}
+
+.tecnologia-card:hover h3{
+    color: #084298;
+}
+
+.tecnologia-card:hover .icone{
+    transform: scale(1.2);
+}
+
+.icone{
+    transition: .3s;
 }
