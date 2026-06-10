@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/home.css">
+    <title>LearnSpace</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>LearnSpace</h1>
+        <p>Educação Digital de Forma Simples e Moderna</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#conteudo">Conteúdo</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2>Bem-vindo à LearnSpace</h2>
+        <p>
+            A LearnSpace é uma plataforma educacional desenvolvida para facilitar o acesso
+            ao conhecimento por meio de conteúdos organizados, claros e acessíveis.
+            Nosso objetivo é apoiar estudantes em sua jornada de aprendizagem, oferecendo
+            materiais educativos, dicas de estudo e informações relevantes em um ambiente
+            digital moderno e intuitivo.
+        </p>
+
+        <p>
+            Aqui você encontra recursos que auxiliam na organização dos estudos,
+            incentivam hábitos de aprendizagem mais eficientes e tornam a busca por
+            conhecimento mais simples e prática. Aprenda no seu ritmo e explore novas
+            oportunidades de desenvolvimento pessoal e acadêmico.
+        </p>
+    </section>
+
+    <section id="conteudo">
+        <h2>Conteúdo</h2>
+
+        <div class="materias-container">
+
+            <a href="matematica.html" class="tecnologia-card">
+                <div class="icone">➗</div>
+                <h3>Matemática</h3>
+                <p>Números, álgebra, geometria e raciocínio lógico.</p>
+            </a>
+
+            <a href="portugues.html" class="tecnologia-card">
+                <div class="icone">📖</div>
+                <h3>Português</h3>
+                <p>Gramática, interpretação de texto e redação.</p>
+            </a>
+
+            <a href="historia.html" class="tecnologia-card">
+                <div class="icone">🏛️</div>
+                <h3>História</h3>
+                <p>Estudo dos acontecimentos históricos do Brasil e do mundo.</p>
+            </a>
+
+            <a href="geografia.html" class="tecnologia-card">
+                <div class="icone">🌎</div>
+                <h3>Geografia</h3>
+                <p>Territórios, clima, população e meio ambiente.</p>
+            </a>
+
+            <a href="ciencias.html" class="tecnologia-card">
+                <div class="icone">🔬</div>
+                <h3>Ciências</h3>
+                <p>Biologia, física e química aplicadas ao cotidiano.</p>
+            </a>
+
+            <a href="ingles.html" class="tecnologia-card">
+                <div class="icone">🇺🇸</div>
+                <h3>Inglês</h3>
+                <p>Vocabulário, gramática e conversação.</p>
+            </a>
+
+            <a href="artes.html" class="tecnologia-card">
+                <div class="icone">🎨</div>
+                <h3>Artes</h3>
+                <p>Expressão artística, desenho, música e cultura.</p>
+            </a>
+
+            <a href="educacao-fisica.html" class="tecnologia-card">
+                <div class="icone">⚽</div>
+                <h3>Educação Física</h3>
+                <p>Esportes, saúde e qualidade de vida.</p>
+            </a>
+
+            <a href="tecnologia.html" class="tecnologia-card">
+                <div class="icone">💻</div>
+                <h3>Tecnologia</h3>
+                <p>Programação, internet e inovação tecnológica.</p>
+            </a>
+
+        </div>
+
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre a LearnSpace</h2>
+        <p>
+            A LearnSpace surgiu com a proposta de contribuir para a democratização do
+            acesso à educação, utilizando tecnologias web para disponibilizar conteúdos
+            educacionais de forma organizada e acessível. A plataforma foi desenvolvida
+            com foco na experiência do usuário, oferecendo uma navegação simples,
+            responsiva e intuitiva.
+        </p>
+
+        <p>
+            O projeto está alinhado ao Objetivo de Desenvolvimento Sustentável 4 (ODS 4)
+            da Organização das Nações Unidas (ONU), que busca garantir educação inclusiva,
+            equitativa e de qualidade para todos. Por meio da tecnologia, buscamos reunir
+            informações, orientações e materiais de apoio que auxiliem estudantes em seu
+            processo de aprendizagem.
+        </p>
+
+        <p>
+            Acreditamos que o conhecimento deve estar ao alcance de todos e que a
+            tecnologia é uma importante ferramenta para transformar a educação,
+            promovendo oportunidades de crescimento acadêmico e profissional.
+        </p>
+    </section>
+
+    <section id="formulario">
+        <h2>Envie suas dúvidas</h2>
+
+        <form>
+
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu e-mail" required>
+
+                <select required>
+                    <option value="" selected disabled>Matéria</option>
+                    <option>Matemática</option>
+                    <option>Português</option>
+                    <option>História</option>
+                    <option>Geografia</option>
+                    <option>Inglês</option>
+                    <option>Artes</option>
+                    <option>Educação Física</option>
+                    <option>Tecnologia</option>
+</select>
+
+                <textarea placeholder="Suas dúvidas" required></textarea>
+
+                <button type="submit">Enviar</button>
+
+        </form>
+
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+
+        <form>
+            <input type="text" placeholder="Seu nome" required>
+            <input type="email" placeholder="Seu e-mail" required>
+            <textarea placeholder="Digite sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 LearnSpace - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
