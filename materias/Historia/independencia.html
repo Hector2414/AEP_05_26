@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Independência do Brasil</title>
+    <style>
+        :root {
+            /* Cores que remetem à história e bandeira do Brasil (tons imperiais) */
+            --primary-color: #065f46; /* Verde bandeira escuro */
+            --secondary-color: #d97706; /* Amarelo ouro / Âmbar */
+            --bg-color: #f0fdf4; /* Verde bem claro e suave para o fundo */
+            --card-bg: #ffffff;
+            --text-color: #1f2937; /* Cinza escuro para melhor leitura */
+            --accent-color: #fef3c7; /* Destaque amarelo claro */
+            --border-color: #e5e7eb;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+            font-size: 1.8rem;
+        }
+
+        .intro {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            border-left: 5px solid var(--secondary-color);
+            font-size: 1.1rem;
+        }
+
+        .grid-independencia {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .grid-independencia {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 1.5rem;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .info-box {
+            background-color: var(--bg-color);
+            border: 1px dashed var(--secondary-color);
+            padding: 1rem;
+            border-radius: 6px;
+            margin: 1rem 0;
+            font-size: 1rem;
+        }
+
+        .info-line {
+            margin: 0.4rem 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .info-line strong {
+            color: var(--primary-color);
+        }
+
+        .legenda {
+            font-size: 0.85rem;
+            color: #4b5563;
+            margin-top: 0.5rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2.5rem;
+            color: #4b5563;
+            font-size: 0.9rem;
+            margin-top: 5rem;
+            border-top: 1px solid var(--border-color);
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>A Independência do Brasil</h1>
+        <p>O processo histórico que rompeu os laços coloniais com Portugal em 1822</p>
+    </header>
+
+    <main>
+        <div class="intro">
+            <p>A <strong>Independência do Brasil</strong>, proclamada em 7 de setembro de 1822, foi o marco que pôs fim ao domínio colonial português e deu início ao Império do Brasil. Ao contrário de outras colônias americanas, o processo brasileiro foi liderado pelo próprio herdeiro da coroa colonizadora, <strong>Dom Pedro I</strong>, mantendo a monarquia como forma de governo.</p>
+        </div>
+
+        <h2 class="section-title">Antecedentes e Causas</h2>
+        <p>A ruptura não aconteceu do dia para a noite. Ela foi o resultado de uma série de fatores políticos e econômicos que se desgastaram nos anos anteriores:</p>
+        
+        <div class="grid-independencia">
+            
+            <div class="card">
+                <div class="card-header">A Vinda da Família Real (1808)</div>
+                <div class="card-body">
+                    <p>Fugindo das invasões napoleônicas na Europa, a corte portuguesa transferiu-se para o Rio de Janeiro, transformando a colônia no centro administrativo do império.</p>
+                    
+                    <div class="info-box">
+                        <div class="info-line"><span>Principal Medida:</span> <strong>Abertura dos Portos</strong></div>
+                        <div class="info-line"><span>Consequência:</span> <strong>Fim do Pacto Colonial</strong></div>
+                    </div>
+                    
+                    <div class="legenda">
+                        O Brasil passou a comercializar diretamente com outras nações (especialmente a Inglaterra), ganhando autonomia econômica.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Revolução do Porto (1820)</div>
+                <div class="card-body">
+                    <p>Uma revolução liberal estourou em Portugal exigindo o retorno do Rei Dom João VI e, crucialmente, a <strong>recolonização do Brasil</strong>.</p>
+                    
+                    <div class="info-box">
+                        <div class="info-line"><span>Exigência das Cortes:</span> <strong>Volta do Monarca</strong></div>
+                        <div class="info-line"><span>Reação Brasileira:</span> <strong>Resistência da Elite</strong></div>
+                    </div>
+                    
+                    <div class="legenda">
+                        As elites brasileiras perceberam que a única forma de manter a liberdade econômica conquistada seria a separação definitiva.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">O Ano da Ruptura: 1822</h2>
+        <p>Os meses que antecederam o famoso grito foram repletos de tensões diplomáticas e mobilização popular na colônia.</p>
+
+        <div class="grid-independencia">
+            
+            <div class="card">
+                <div class="card-header">O Dia do Fico (9 de Janeiro)</div>
+                <div class="card-body">
+                    <p>Pressionado por Portugal para retornar imediatamente à Europa, o príncipe regente Dom Pedro desobedeceu as ordens vindas de Lisboa.</p>
+                    <p>Apoiado por uma petição com milhares de assinaturas de cidadãos, ele declarou publicamente que permaneceria no Brasil, fortalecendo o movimento separatista.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">O Grito do Ipiranga (7 de Setembro)</div>
+                <div class="card-body">
+                    <p>Durante uma viagem a São Paulo, Dom Pedro recebeu novas cartas de Lisboa que anulavam seus atos e ameaçavam sua autoridade.</p>
+                    <p>Às margens do <strong>Riacho Ipiranga</strong>, ele rompeu formalmente as relações com Portugal, eternizando a frase <em>"Independência ou Morte!"</em>.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">Consolidação e Pós-Independência</h2>
+        <p>Após a proclamação, o novo país precisou lutar interna e externamente para garantir sua soberania:</p>
+
+        <div class="grid-independencia">
+            
+            <div class="card">
+                <div class="card-header">Guerra de Independência</div>
+                <div class="card-body">
+                    <p>A separação não foi pacífica em todo o território. Províncias como <strong>Bahia, Maranhão, Pará e Cisplatina</strong> tinham tropas fiéis a Portugal e resistiram.</p>
+                    <p>O governo central precisou contratar mercenários estrangeiros e mobilizar tropas locais para sufocar os focos de resistência e unificar o território nacional.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Reconhecimento Internacional</div>
+                <div class="card-body">
+                    <p>O primeiro país a reconhecer a independência do Brasil foram os <strong>Estados Unidos (1824)</strong>, seguidos pela Inglaterra.</p>
+                    <p>Portugal só aceitou a independência em 1825, mediante o pagamento de uma indenização indenizatória de 2 milhões de libras esterlinas, que deu origem à primeira dívida externa do Brasil.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Página Educativa de História • Resumo Didático da Independência do Brasil (1822)</p>
+    </footer>
+
+</body>
+</html>

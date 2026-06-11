@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>As Duas Guerras Mundiais</title>
+    <style>
+        :root {
+            /* Cores sóbrias e militares: tons de cinza, azul-escuro e detalhes em bronze/vermelho contido */
+            --primary-color: #1e293b; /* Azul-escuro quase preto / Ardósia */
+            --secondary-color: #9a3412; /* Vermelho queimado / Tijolo */
+            --bg-color: #f1f5f9; /* Cinza claro suave */
+            --card-bg: #ffffff;
+            --text-color: #0f172a; /* Grafite escuro */
+            --accent-color: #ffedd5; /* Destaque suave */
+            --border-color: #cbd5e1;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), #334155);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            border-bottom: 5px solid var(--secondary-color);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+            font-size: 1.8rem;
+        }
+
+        .intro {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            border-left: 5px solid var(--primary-color);
+            font-size: 1.1rem;
+        }
+
+        .grid-guerras {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .grid-guerras {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 1.5rem;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        .card-header.segunda {
+            background-color: #0f172a; /* Tom ainda mais escuro para diferenciar */
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .info-box {
+            background-color: var(--bg-color);
+            border: 1px dashed var(--primary-color);
+            padding: 1rem;
+            border-radius: 6px;
+            margin: 1rem 0;
+            font-size: 0.95rem;
+        }
+
+        .info-line {
+            margin: 0.4rem 0;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dotted #cbd5e1;
+            padding-bottom: 0.2rem;
+        }
+
+        .info-line:last-child {
+            border-bottom: none;
+        }
+
+        .info-line strong {
+            color: var(--secondary-color);
+        }
+
+        .legenda {
+            font-size: 0.85rem;
+            color: #475569;
+            margin-top: 0.5rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2.5rem;
+            color: #475569;
+            font-size: 0.9rem;
+            margin-top: 5rem;
+            border-top: 1px solid var(--border-color);
+            background-color: #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>As Guerras Mundiais</h1>
+        <p>Os dois grandes conflitos globais que redefiniram as fronteiras e a história do século XX</p>
+    </header>
+
+    <main>
+        <div class="intro">
+            <p>A primeira metade do século XX foi marcada por duas conflagrações de proporções inéditas. As <strong>Guerras Mundiais</strong> mobilizaram a indústria, a ciência e populações inteiras em combates que se estenderam por vários continentes, resultando no fim de impérios antigos e no nascimento da geopolítica contemporânea.</p>
+        </div>
+
+        <h2 class="section-title">1. Primeira Guerra Mundial (1914 – 1918)</h2>
+        <p>Conhecida na época como "A Grande Guerra", foi um conflito de desgaste estagnado, marcado profundamente pela transição para a tecnologia militar moderna.</p>
+        
+        <div class="grid-guerras">
+            
+            <div class="card">
+                <div class="card-header">O Conflito e Alianças</div>
+                <div class="card-body">
+                    <p>Motivada por rivalidades imperialistas, nacionalismo exacerbado e uma intensa corrida armamentista na Europa.</p>
+                    
+                    <div class="info-box">
+                        <div class="info-line"><span>Estopim:</span> <strong>Morte do Arceduque Franz Ferdinand</strong></div>
+                        <div class="info-line"><span>Tríplice Entente:</span> <strong>França, Reino Unido, Rússia (e EUA)</strong></div>
+                        <div class="info-line"><span>Tríplice Aliança:</span> <strong>Alemanha, Áustria-Hungria, Itália*</strong></div>
+                    </div>
+                    
+                    <div class="legenda">
+                        *A Itália mudou de lado em 1915. O conflito ficou famoso pela brutal <strong>Guerra de Trincheiras</strong>.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Consequências Principais</div>
+                <div class="card-body">
+                    <p>O mapa da Europa foi completamente redesenhado com a queda de quatro grandes impérios: Alemão, Austro-Húngaro, Otomano e Russo.</p>
+                    <p>A assinatura do <strong>Tratado de Versalhes</strong> impôs punições severas e humilhantes à Alemanha, criando um terreno fértil de ressentimento que alimentaria o próximo conflito global.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">2. Segunda Guerra Mundial (1939 – 1945)</h2>
+        <p>O maior e mais letal conflito da história da humanidade, caracterizado pela guerra de movimento rápido (guerra-relâmpago) e pelo forte confronto ideológico.</p>
+
+        <div class="grid-guerras">
+            
+            <div class="card">
+                <div class="card-header segunda">O Conflito e Alianças</div>
+                <div class="card-body">
+                    <p>Desencadeada pela política expansionista e militarista de regimes totalitários fascistas e nazistas na Europa e na Ásia.</p>
+                    
+                    <div class="info-box">
+                        <div class="info-line"><span>Estopim:</span> <strong>Invasão da Polônia pela Alemanha</strong></div>
+                        <div class="info-line"><span>Aliados:</span> <strong>Reino Unido, URSS, EUA, França</strong></div>
+                        <div class="info-line"><span>Eixo:</span> <strong>Alemanha, Itália, Japão</strong></div>
+                    </div>
+                    
+                    <div class="legenda">
+                        Marcada por episódios trágicos como o <strong>Holocausto</strong> e o uso inédito de armas nucleares em Hiroshima e Nagasaki.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header segunda">Consequências Principais</div>
+                <div class="card-body">
+                    <p>Fim dos regimes fascistas na Europa e declínio definitivo das potências coloniais europeias (Reino Unido e França).</p>
+                    <p>Criação da <strong>ONU</strong> para mediar disputas globais e o início da <strong>Guerra Fria</strong>, que dividiu o mundo em dois blocos de poder liderados pelos EUA e pela União Soviética.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Página Educativa de História • Resumo Comparativo das Guerras Mundiais</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Revolução Industrial</title>
+    <style>
+        :root {
+            /* Cores industriais: tons de ferro, ferrugem, carvão e tijolo */
+            --primary-color: #451a03; /* Marrom escuro/tijolo queimado */
+            --secondary-color: #b45309; /* Âmbar/Ferrugem */
+            --bg-color: #fcf8f2; /* Areia claro/papel antigo */
+            --card-bg: #ffffff;
+            --text-color: #27272a; /* Grafite escuro */
+            --accent-color: #fef3c7; /* Destaque suave */
+            --border-color: #e4e4e7;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+            font-size: 1.8rem;
+        }
+
+        .intro {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            border-left: 5px solid var(--secondary-color);
+            font-size: 1.1rem;
+        }
+
+        .grid-industrial {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .grid-industrial {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 1.5rem;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .info-box {
+            background-color: var(--bg-color);
+            border: 1px dashed var(--secondary-color);
+            padding: 1rem;
+            border-radius: 6px;
+            margin: 1rem 0;
+            font-size: 1rem;
+        }
+
+        .info-line {
+            margin: 0.4rem 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .info-line strong {
+            color: var(--primary-color);
+        }
+
+        .legenda {
+            font-size: 0.85rem;
+            color: #71717a;
+            margin-top: 0.5rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2.5rem;
+            color: #71717a;
+            font-size: 0.9rem;
+            margin-top: 5rem;
+            border-top: 1px solid var(--border-color);
+            background-color: #f4f4f5;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>A Revolução Industrial</h1>
+        <p>A transformação tecnológica, econômica e social que moldou o mundo moderno</p>
+    </header>
+
+    <main>
+        <div class="intro">
+            <p>A <strong>Revolução Industrial</strong> foi um processo de profundas transformações econômicas e sociais que teve início na Inglaterra em meados do século XVIII. A principal mudança foi a transição da produção artesanal (manufatura) para a produção por máquinas (maquinofatura), consolidando o sistema capitalista e urbanizando as sociedades.</p>
+        </div>
+
+        <h2 class="section-title">As Três Grandes Fases Históricas</h2>
+        <p>O processo evolutivo da industrialização costuma ser dividido em etapas, cada uma marcada por novas fontes de energia e inovações técnicas essenciais.</p>
+        
+        <div class="grid-industrial">
+            
+            <div class="card">
+                <div class="card-header">1ª Revolução Industrial</div>
+                <div class="card-body">
+                    <p>Iniciada na segunda metade do século XVIII na Grã-Bretanha. Caracterizou-se pela introdução das máquinas que substituíram a força humana e animal.</p>
+                    
+                    <div class="info-box">
+                        <div class="info-line"><span>Combustível:</span> <strong>Carvão Mineral</strong></div>
+                        <div class="info-line"><span>Motorização:</span> <strong>Máquina a Vapor</strong></div>
+                        <div class="info-line"><span>Foco Principal:</span> <strong>Indústria Têxtil</strong></div>
+                    </div>
+                    
+                    <div class="legenda">
+                        <strong>Principais Avanços:</strong> Locomotiva a vapor, teares mecânicos e expansão da metalurgia do ferro.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">2ª Revolução Industrial</div>
+                <div class="card-body">
+                    <p>Ocorreu a partir de meados do século XIX, expandindo-se para países como Alemanha, Estados Unidos, França e Japão, trazendo a produção em massa.</p>
+                    
+                    <div class="info-box">
+                        <div class="info-line"><span>Combustível:</span> <strong>Petróleo / Eletricidade</strong></div>
+                        <div class="info-line"><span>Modelo Técnico:</span> <strong>Linha de Montagem</strong></div>
+                        <div class="info-line"><span>Foco Principal:</span> <strong>Siderurgia e Química</strong></div>
+                    </div>
+                    
+                    <div class="legenda">
+                        <strong>Principais Avanços:</strong> Motor a combustão interna, telefone, lâmpada incandescente e o aço em larga escala (Fordismo).
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">3ª Revolução Industrial</div>
+                <div class="card-body">
+                    <p>Também chamada de Revolução Técnico-Científica-Informacional, iniciada em meados do século XX (pós-Segunda Guerra Mundial), unindo a ciência à produção.</p>
+                    
+                    <div class="info-box">
+                        <div class="info-line"><span>Energia:</span> <strong>Nuclear e Renováveis</strong></div>
+                        <div class="info-line"><span>Base Técnica:</span> <strong>Informática e Automação</strong></div>
+                        <div class="info-line"><span>Foco Principal:</span> <strong>Tecnologia da Informação</strong></div>
+                    </div>
+                    
+                    <div class="legenda">
+                        <strong>Principais Avanços:</strong> Computadores, internet, telecomunicações, robótica industrial e engenharia genética.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">Principais Consequências</h2>
+        <p>Esse marco histórico alterou drasticamente a estrutura e o cotidiano da humanidade em diversos âmbitos:</p>
+
+        <div class="grid-industrial">
+            
+            <div class="card">
+                <div class="card-header">Impactos Sociais</div>
+                <div class="card-body">
+                    <p>Surgimento de duas novas classes sociais antagônicas: a <strong>burguesia industrial</strong> (donos dos meios de produção) e o <strong>proletariado</strong> (trabalhadores assalariados).</p>
+                    <p>O êxodo rural massivo causou um crescimento urbano desordenado, gerando problemas de habitação e saneamento nas cidades.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Relações de Trabalho</div>
+                <div class="card-body">
+                    <p>Nos primeiros séculos de revolução, as jornadas passavam de 14 horas diárias sob péssimas condições. Isso desencadeou o surgimento dos primeiros sindicatos e movimentos operários (como o Ludismo e o Cartismo) na busca por direitos trabalhistas.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Página Educativa de História • Resumo Didático da Revolução Industrial</p>
+    </footer>
+
+</body>
+</html>
