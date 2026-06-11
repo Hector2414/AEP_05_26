@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução à Geometria</title>
+    <style>
+        :root {
+            --primary-color: #0f766e;
+            --secondary-color: #14b8a6;
+            --bg-color: #f0fdfa;
+            --card-bg: #ffffff;
+            --text-color: #1e293b;
+            --accent-color: #ccfbf1;
+            --border-color: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+            font-size: 1.8rem;
+        }
+
+        .intro {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            border-left: 5px solid var(--secondary-color);
+            font-size: 1.1rem;
+        }
+
+        .grid-geometria {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .grid-geometria {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 1.5rem;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .formula-box {
+            background-color: var(--bg-color);
+            border: 1px dashed var(--secondary-color);
+            padding: 1rem;
+            border-radius: 6px;
+            margin: 1rem 0;
+            font-family: 'Cambria', Georgia, serif;
+            font-size: 1.1rem;
+        }
+
+        .formula-line {
+            margin: 0.4rem 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .formula-line strong {
+            color: var(--primary-color);
+        }
+
+        .legenda {
+            font-size: 0.85rem;
+            color: #64748b;
+            margin-top: 0.5rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2.5rem;
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-top: 5rem;
+            border-top: 1px solid var(--border-color);
+            background-color: #f8fafc;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Desvendando a Geometria</h1>
+        <p>A matemática das formas, tamanhos e dimensões do espaço</p>
+    </header>
+
+    <main>
+        <div class="intro">
+            <p>A <strong>Geometria</strong> (do grego <em>geo</em> = terra + <em>metria</em> = medida) é a área da matemática que estuda as propriedades e as relações de pontos, linhas, superfícies e sólidos. Ela se divide principalmente em Plana (duas dimensões) e Espacial (três dimensões).</p>
+        </div>
+
+        <h2 class="section-title">1. Geometria Plana (2D)</h2>
+        <p>Estuda as figuras bidimensionais, ou seja, aquelas que possuem apenas comprimento e largura (estão contidas em um plano).</p>
+        
+        <div class="grid-geometria">
+            
+            <div class="card">
+                <div class="card-header">Quadriláteros</div>
+                <div class="card-body">
+                    <p>Figuras de 4 lados. No <strong>Quadrado</strong> todos os lados são iguais. No <strong>Retângulo</strong>, os lados opostos são iguais.</p>
+                    
+                    <div class="formula-box">
+                        <div class="formula-line"><span>Área do Quadrado:</span> <strong>A = l²</strong></div>
+                        <div class="formula-line"><span>Área do Retângulo:</span> <strong>A = b · h</strong></div>
+                        <div class="formula-line"><span>Perímetro:</span> <strong>P = Soma de todos os lados</strong></div>
+                    </div>
+                    
+                    <div class="legenda">
+                        <strong>Legenda:</strong> l = lado | b = base | h = altura
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Triângulo</div>
+                <div class="card-body">
+                    <p>Polígono de 3 lados. A soma dos seus ângulos internos é sempre igual a 180°.</p>
+                    
+                    <div class="formula-box">
+                        <div class="formula-line"><span>Área Geral:</span> <strong>A = (b · h) / 2</strong></div>
+                        <div class="formula-line"><span>Teorema de Pitágoras*:</span> <strong>a² = b² + c²</strong></div>
+                    </div>
+                    
+                    <div class="legenda">
+                        *Válido apenas para triângulos retângulos (com ângulo de 90°), onde 'a' é a hipotenusa.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Círculo</div>
+                <div class="card-body">
+                    <p>Figura plana delimitada por uma circunferência onde todos os pontos da borda estão à mesma distância do centro.</p>
+                    
+                    <div class="formula-box">
+                        <div class="formula-line"><span>Área:</span> <strong>A = π · r²</strong></div>
+                        <div class="formula-line"><span>Comprimento (Perímetro):</span> <strong>C = 2 · π · r</strong></div>
+                    </div>
+                    
+                    <div class="legenda">
+                        <strong>Legenda:</strong> r = raio | π (Pi) ≈ 3,1415
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">2. Geometria Espacial (3D)</h2>
+        <p>Estuda os objetos tridimensionais, que possuem comprimento, largura e <strong>profundidade</strong>. Aqui calculamos o volume (capacidade).</p>
+
+        <div class="grid-geometria">
+            
+            <div class="card">
+                <div class="card-header">Cubo e Paralelepípedo</div>
+                <div class="card-body">
+                    <p>Sólidos geométricos com faces retangulares ou quadradas (prismas).</p>
+                    
+                    <div class="formula-box">
+                        <div class="formula-line"><span>Volume do Cubo:</span> <strong>V = a³</strong></div>
+                        <div class="formula-line"><span>Volume do Paralelepípedo:</span> <strong>V = a · b · c</strong></div>
+                    </div>
+                    
+                    <div class="legenda">
+                        <strong>Legenda:</strong> a, b, c = dimensões (comprimento, largura, altura)
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Cilindro</div>
+                <div class="card-body">
+                    <p>Sólido alongado de formato circular que possui duas bases circulares paralelas idênticas.</p>
+                    
+                    <div class="formula-box">
+                        <div class="formula-line"><span>Volume:</span> <strong>V = π · r² · h</strong></div>
+                    </div>
+                    
+                    <div class="legenda">
+                        <strong>Dica:</strong> O volume é simplesmente a área da base (círculo) multiplicada pela altura (h).
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Esfera</div>
+                <div class="card-body">
+                    <p>Um sólido perfeitamente simétrico em três dimensões, semelhante a uma bola de futebol.</p>
+                    
+                    <div class="formula-box">
+                        <div class="formula-line"><span>Volume:</span> <strong>V = (4/3) · π · r³</strong></div>
+                    </div>
+                    
+                    <div class="legenda">
+                        <strong>Legenda:</strong> r = raio da esfera da borda até o centro exato.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Página Educativa de Matemática • Fórmulas Geométricas Básicas</p>
+    </footer>
+
+</body>
+</html>

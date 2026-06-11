@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entendendo o JavaScript</title>
+    <style>
+        :root {
+            --primary-color: #2b6cb0;
+            --secondary-color: #3182ce;
+            --bg-color: #f7fafc;
+            --card-bg: #ffffff;
+            --text-color: #2d3748;
+            --accent-color: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .intro {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+            font-size: 1.6rem;
+        }
+
+        .grid-js {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .grid-js {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid var(--accent-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .code-box {
+            background-color: #edf2f7;
+            padding: 0.8rem;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.85rem;
+            margin-top: 1rem;
+            border-left: 3px solid var(--secondary-color);
+            color: #2d3748;
+            line-height: 1.4;
+        }
+
+        .js-keyword { color: #b7791f; font-weight: bold; }
+        .js-method { color: #2b6cb0; }
+        .js-string { color: #2f855a; }
+        .js-comment { color: #718096; font-style: italic; }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #718096;
+            font-size: 0.9rem;
+            margin-top: 4rem;
+            border-top: 1px solid var(--accent-color);
+        }
+    </style>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Desvendando o JavaScript</h1>
+        <p>A linguagem que traz comportamento, lógica e interatividade para a web</p>
+    </header>
+
+        <nav>
+        <ul>
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="#conteudo">Conteúdo</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h3>Os Músculos do Navegador</h3>
+            <p>Se o HTML estrutura o conteúdo e o CSS define o visual, o <strong>JavaScript (JS)</strong> é a real linguagem de programação que roda diretamente no navegador do usuário. Sua função principal é <strong>dar vida à página</strong>, controlando comportamentos dinâmicos, respondendo a cliques e processando dados em tempo real.</p>
+        </section>
+
+        <h2 class="section-title">1. Qual a função principal do JavaScript?</h2>
+        <p>A missão do JavaScript é reagir a eventos e modificar a página web sem que o usuário precise recarregá-la.</p>
+
+        <div class="grid-js">
+            
+            <div class="card">
+                <div class="card-header">Manipulação do DOM</div>
+                <div class="card-body">
+                    <p>O JavaScript consegue acessar a estrutura do HTML (chamada de DOM) e alterá-la dinamicamente. Ele pode criar novos textos, alterar cores que vieram do CSS, esconder ou exibir elementos na tela quando o usuário realiza uma ação.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Resposta a Eventos</div>
+                <div class="card-body">
+                    <p>O JavaScript fica "escutando" as interações do usuário. Exemplos comuns de gatilhos controlados pelo JS:</p>
+                    <ul>
+                        <li>O clique em um botão.</li>
+                        <li>O envio de um formulário de cadastro.</li>
+                        <li>O movimento do mouse ou a rolagem da página.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">2. Como a lógica é aplicada?</h2>
+        <p>Diferente do HTML e do CSS, no JavaScript usamos recursos de programação reais como variáveis, funções e tomada de decisões.</p>
+
+        <div class="grid-js">
+            
+            <div class="card" style="grid-column: 1 / -1;">
+                <div class="card-header">Exemplo Prático: Criando um Alerta</div>
+                <div class="card-body">
+                    <p>Veja como o JavaScript usa funções e eventos para capturar um clique e exibir uma mensagem interativa na tela:</p>
+                    
+                    <div class="code-box">
+                        <span class="js-comment">// 1. Seleciona o botão no HTML usando seu ID</span><br>
+                        <span class="js-keyword">const</span> botao = document.<span class="js-method">getElementById</span>(<span class="js-string">'meuBotao'</span>);<br><br>
+                        
+                        <span class="js-comment">// 2. Cria uma função para o comportamento do clique</span><br>
+                        <span class="js-keyword">function</span> <span class="js-method">exibirMensagem</span>() {<br>
+                        &nbsp;&nbsp;<span class="js-method">alert</span>(<span class="js-string">'Você clicou no botão e o JavaScript funcionou!'</span>);<br>
+                        }<br><br>
+                        
+                        <span class="js-comment">// 3. Avisa ao botão para escutar o evento de "click"</span><br>
+                        botao.<span class="js-method">addEventListener</span>(<span class="js-string">'click'</span>, exibirMensagem);
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Página Educativa • Introdução à Lógica e Programação com JavaScript</p>
+    </footer>
+
+</body>
+</html>

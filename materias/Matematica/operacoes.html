@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operações Básicas da Matemática</title>
+    <style>
+        :root {
+            --primary-color: #2b6cb0;
+            --secondary-color: #3182ce;
+            --bg-color: #f7fafc;
+            --card-bg: #ffffff;
+            --text-color: #2d3748;
+            --accent-color: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .intro {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .grid-operacoes {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .grid-operacoes {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid var(--accent-color);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .simbolo {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+        }
+
+        .card-body h4 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        th, td {
+            padding: 0.5rem;
+            text-align: left;
+            border-bottom: 1px solid var(--accent-color);
+        }
+
+        th {
+            background-color: #f8fafc;
+            color: #4a5568;
+        }
+
+        .exemplo {
+            background-color: #edf2f7;
+            padding: 0.8rem;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #718096;
+            font-size: 0.9rem;
+            margin-top: 4rem;
+            border-top: 1px solid var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Operações Básicas da Matemática</h1>
+        <p>Os pilares da aritmética que usamos no dia a dia</p>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h3>A Base de Tudo</h3>
+            <p>As quatro operações fundamentais da matemática são a <strong>Adição</strong>, a <strong>Subtração</strong>, a <strong>Multiplicação</strong> e a <strong>Divisão</strong>. Elas formam a base para qualquer cálculo mais complexo que realizamos na ciência, engenharia e na nossa rotina diária.</p>
+        </section>
+
+        <section class="grid-operacoes">
+            
+            <div class="card">
+                <div class="card-header">
+                    <span>Adição</span>
+                    <span class="simbolo">+</span>
+                </div>
+                <div class="card-body">
+                    <p>A adição consiste em <strong>somar</strong> ou agrupar duas ou mais quantidades para obter um total.</p>
+                    
+                    <h4>Termos da Operação:</h4>
+                    <table>
+                        <tr><th>Posição</th><th>Nome do Termo</th></tr>
+                        <tr><td>A e B</td><td>Parcelas</td></tr>
+                        <tr><td>Resultado</td><td>Soma ou Total</td></tr>
+                    </table>
+
+                    <div class="exemplo">
+                        Exemplo: 5 + 3 = 8
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <span>Subtração</span>
+                    <span class="simbolo">−</span>
+                </div>
+                <div class="card-body">
+                    <p>A subtração consiste em <strong>retirar</strong> uma quantidade de outra, ou descobrir a diferença entre dois valores.</p>
+                    
+                    <h4>Termos da Operação:</h4>
+                    <table>
+                        <tr><th>Posição</th><th>Nome do Termo</th></tr>
+                        <tr><td>Primeiro número</td><td>Minuendo</td></tr>
+                        <tr><td>Número subtraído</td><td>Subtraendo</td></tr>
+                        <tr><td>Resultado</td><td>Resto ou Diferença</td></tr>
+                    </table>
+
+                    <div class="exemplo">
+                        Exemplo: 9 − 4 = 5
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <span>Multiplicação</span>
+                    <span class="simbolo">× ou ·</span>
+                </div>
+                <div class="card-body">
+                    <p>A multiplicação é a forma rápida de somar um número por ele mesmo várias vezes (uma <strong>soma de parcelas iguais</strong>).</p>
+                    
+                    <h4>Termos da Operação:</h4>
+                    <table>
+                        <tr><th>Posição</th><th>Nome do Termo</th></tr>
+                        <tr><td>Números multiplicados</td><td>Fatores (ou Multiplicando/Multiplicador)</td></tr>
+                        <tr><td>Resultado</td><td>Produto</td></tr>
+                    </table>
+
+                    <div class="exemplo">
+                        Exemplo: 4 × 3 = 12 <br><small>(ou seja: 4 + 4 + 4)</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <span>Divisão</span>
+                    <span class="simbolo">÷ ou /</span>
+                </div>
+                <div class="card-body">
+                    <p>A divisão consiste em <strong>repartir</strong> uma quantidade em partes iguais. É a operação inversa da multiplicação.</p>
+                    
+                    <h4>Termos da Operação:</h4>
+                    <table>
+                        <tr><th>Posição</th><th>Nome do Termo</th></tr>
+                        <tr><td>Número a ser dividido</td><td>Dividendo</td></tr>
+                        <tr><td>Em quantas partes</td><td>Divisor</td></tr>
+                        <tr><td>Resultado</td><td>Quociente</td></tr>
+                        <tr><td>O que sobra</td><td>Resto</td></tr>
+                    </table>
+
+                    <div class="exemplo">
+                        Exemplo: 15 ÷ 3 = 5 <br><small>(Resto: 0)</small>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Página Educativa de Matemática • Desenvolvida com HTML e CSS</p>
+    </footer>
+
+</body>
+</html>

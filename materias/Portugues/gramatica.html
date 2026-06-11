@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gramática da Língua Portuguesa</title>
+    <style>
+        :root {
+            --primary-color: #2b6cb0;
+            --secondary-color: #3182ce;
+            --bg-color: #f7fafc;
+            --card-bg: #ffffff;
+            --text-color: #2d3748;
+            --accent-color: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .intro {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+            font-size: 1.6rem;
+        }
+
+        .grid-gramatica {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .grid-gramatica {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid var(--accent-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .card-body h4 {
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .exemplo-box {
+            background-color: #edf2f7;
+            padding: 0.8rem;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            margin-top: 1rem;
+            border-left: 3px solid var(--secondary-color);
+        }
+
+        .destaque-palavra {
+            color: #2c5282;
+            font-weight: bold;
+            background: #e2e8f0;
+            padding: 0.1rem 0.3rem;
+            border-radius: 4px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #718096;
+            font-size: 0.9rem;
+            margin-top: 4rem;
+            border-top: 1px solid var(--accent-color);
+        }
+    </style>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Gramática da Língua Portuguesa</h1>
+        <p>A estrutura, as regras e o funcionamento do nosso idioma</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="#conteudo">Conteúdo</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h3>Os Pilares da Língua</h3>
+            <p>A gramática normativa é o conjunto de regras que determinam o uso correto da língua falada e escrita. Para fins de estudo, ela se divide de forma mecânica: a <strong>Fonologia</strong> (sons), a <strong>Morfologia</strong> (as palavras isoladas) e a <strong>Sintaxe</strong> (a relação entre as palavras na frase).</p>
+        </section>
+
+        <h2 class="section-title">1. Morfologia (As Classes de Palavras)</h2>
+        <p>Estuda a palavra de forma isolada, classificando-a em um dos 10 grupos (classes gramaticais) existentes no português.</p>
+
+        <div class="grid-gramatica">
+            
+            <div class="card">
+                <div class="card-header">Nomear e Caracterizar</div>
+                <div class="card-body">
+                    <p><strong>Substantivo:</strong> É a palavra que dá nome aos seres, objetos, lugares e sentimentos.</p>
+                    <p><strong>Adjetivo:</strong> É a palavra que qualifica ou modifica o substantivo, atribuindo-lhe uma característica.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Exemplo:</strong> O <span class="destaque-palavra">aluno</span> <span class="destaque-palavra" style="background:#cbd5e0;">dedicado</span> passou.<br>
+                        <small>• aluno = Substantivo<br>• dedicado = Adjetivo</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Verbo (Ação e Estado)</div>
+                <div class="card-body">
+                    <p>É a classe de palavra que exprime uma <strong>ação</strong>, um <strong>estado</strong>, um fato ou um <strong>fenômeno da natureza</strong>, variando em tempo (passado, presente, futuro) e pessoa.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Exemplo:</strong> Nós <span class="destaque-palavra">estudamos</span> lógica ontem e <span class="destaque-palavra">choveu</span> muito.<br>
+                        <small>• estudamos = Ação (passado)<br>• choveu = Fenômeno da natureza</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">2. Sintaxe (A Organização da Oração)</h2>
+        <p>Ao contrário da morfologia, a sintaxe estuda a função que a palavra desempenha <strong>dentro do contexto</strong> de uma frase.</p>
+
+        <div class="grid-gramatica">
+            
+            <div class="card">
+                <div class="card-header">O Sujeito</div>
+                <div class="card-body">
+                    <p>É o termo da oração sobre o qual se declara algo, e com o qual o verbo concorda em número e pessoa.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Exemplo:</strong> <span class="destaque-palavra">Os computadores</span> processam dados.<br>
+                        <small>• Quem processa dados? "Os computadores" (Sujeito Plural).</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">O Predicado e Complementos</div>
+                <div class="card-body">
+                    <p><strong>Predicado:</strong> É tudo aquilo que se diz ou se declara sobre o sujeito (contém o verbo).</p>
+                    <p><strong>Objeto (Direto/Indireto):</strong> É o complemento que o verbo exige para fazer sentido completo.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Na frase anterior:</strong> Os computadores <span class="destaque-palavra">processam dados</span>.<br>
+                        <small>• "processam dados" = Predicado<br>• "dados" = Objeto Direto (o que é processado)</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Página Educativa • Introdução à Gramática e Sintaxe da Língua Portuguesa</p>
+    </footer>
+
+</body>
+</html>

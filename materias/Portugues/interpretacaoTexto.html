@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interpretação de Texto</title>
+    <style>
+        :root {
+            --primary-color: #2b6cb0;
+            --secondary-color: #3182ce;
+            --bg-color: #f7fafc;
+            --card-bg: #ffffff;
+            --text-color: #2d3748;
+            --accent-color: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .intro {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+            font-size: 1.6rem;
+        }
+
+        .grid-interpretacao {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .grid-interpretacao {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid var(--accent-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .exemplo-box {
+            background-color: #edf2f7;
+            padding: 0.8rem;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            margin-top: 1rem;
+            border-left: 3px solid var(--secondary-color);
+        }
+
+        .termo-chave {
+            color: #2c5282;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #718096;
+            font-size: 0.9rem;
+            margin-top: 4rem;
+            border-top: 1px solid var(--accent-color);
+        }
+    </style>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+
+
+
+    <header>
+        <h1>Interpretação de Texto</h1>
+        <p>A arte de ler as entrelinhas, compreender contextos e extrair significados</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="#conteudo">Conteúdo</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h3>Compreender vs. Interpretar</h3>
+            <p>Existe uma diferença sutil, mas vital, na leitura ativa: <strong>Compreender</strong> é enxergar o que está explicitamente escrito no texto (informação objetiva). <strong>Interpretar</strong> vai além, exigindo dedução, percepção de intenções do autor e conexões com o contexto histórico ou social do que foi lido.</p>
+        </section>
+
+        <h2 class="section-title">1. Níveis de Sentido das Palavras</h2>
+        <p>As palavras mudam de papel dependendo da intenção de quem escreve. Identificar o sentido é o primeiro passo para a análise.</p>
+
+        <div class="grid-interpretacao">
+            
+            <div class="card">
+                <div class="card-header">Denotação (Sentido Literal)</div>
+                <div class="card-body">
+                    <p>É o uso da palavra em seu sentido real, objetivo e dicionarizado. Muito comum em notícias, artigos científicos e manuais.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Exemplo:</strong> O <span class="termo-chave">coração</span> humano é um órgão muscular que bombeia sangue.<br>
+                        <small>• Uso cirúrgico, exato e sem ambiguidades.</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Conotação (Sentido Figurado)</div>
+                <div class="card-body">
+                    <p>É o uso da palavra carregada de sentimentos, analogias ou nuances culturais. Base da literatura, poemas e publicidade.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Exemplo:</strong> Aquela música tocou o meu <span class="termo-chave">coração</span> de uma forma única.<br>
+                        <small>• O termo simboliza emoção, afeto e sensibilidade.</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">2. Estratégias para uma Boa Interpretação</h2>
+        <p>Métodos eficientes para evitar erros comuns como a extrapolação (inventar ideias fora do texto) ou redução (ignorar o todo).</p>
+
+        <div class="grid-interpretacao">
+            
+            <div class="card">
+                <div class="card-header">Análise do Contexto</div>
+                <div class="card-body">
+                    <p>Observe onde e quando o texto foi publicado, quem é o autor e qual o seu público-alvo. Uma palavra isolada pode mudar de sentido dependendo de quem a pronuncia.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Identificação do Tema Central</div>
+                <div class="card-body">
+                    <p>Ao ler, pergunte-se: <em>"O que o autor quer defender com este parágrafo?"</em>. Tente resumir a ideia central de cada bloco do texto em poucas palavras para mapear a lógica do raciocínio.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Página Educativa • Técnicas de Análise e Interpretação Textual</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raciocínio Lógico: Matemática e Computação</title>
+    <style>
+        :root {
+            --primary-color: #2b6cb0;
+            --secondary-color: #3182ce;
+            --bg-color: #f7fafc;
+            --card-bg: #ffffff;
+            --text-color: #2d3748;
+            --accent-color: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .intro {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+            font-size: 1.6rem;
+        }
+
+        .grid-logica {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .grid-logica {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid var(--accent-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .card-body h4 {
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        th, td {
+            padding: 0.5rem;
+            text-align: center;
+            border: 1px solid var(--accent-color);
+        }
+
+        th {
+            background-color: #f8fafc;
+            color: #4a5568;
+        }
+
+        .v-true { color: #2f855a; font-weight: bold; }
+        .f-false { color: #c53030; font-weight: bold; }
+
+        .code-box {
+            background-color: #edf2f7;
+            padding: 0.8rem;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.95rem;
+            margin-top: 0.5rem;
+            border-left: 3px solid var(--secondary-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #718096;
+            font-size: 0.9rem;
+            margin-top: 4rem;
+            border-top: 1px solid var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Raciocínio Lógico</h1>
+        <p>A ponte de ouro entre a Matemática Pura e a Ciência da Computação</p>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h3>O Elo Perdido</h3>
+            <p>O raciocínio lógico é o que permite transformar o pensamento humano em instruções que uma máquina consegue processar. Na matemática, usamos proposições e conectivos para julgar o que é <strong>Verdadeiro</strong> ou <strong>Falso</strong>. Na computação, esse sistema se torna a Álgebra Booleana, onde Verdadeiro vira <strong>1</strong> e Falso vira <strong>0</strong> (os famosos bits).</p>
+        </section>
+
+        <h2 class="section-title">1. Operadores Lógicos (Matemática)</h2>
+        <p>Estruturas usadas para combinar proposições simples e formar frases complexas.</p>
+
+        <div class="grid-logica">
+            
+            <div class="card">
+                <div class="card-header">Conjunção (E / ∧)</div>
+                <div class="card-body">
+                    <p>Só resulta em <strong>Verdadeiro</strong> se todas as proposições envolvidas forem verdadeiras ao mesmo tempo.</p>
+                    
+                    <table>
+                        <tr><th>A</th><th>B</th><th>A ∧ B</th></tr>
+                        <tr><td>V</td><td>V</td><td class="v-true">V</td></tr>
+                        <tr><td>V</td><td>F</td><td class="f-false">F</td></tr>
+                        <tr><td>F</td><td>V</td><td class="f-false">F</td></tr>
+                        <tr><td>F</td><td>F</td><td class="f-false">F</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Disjunção (OU / ∨)</div>
+                <div class="card-body">
+                    <p>Resulta em <strong>Verdadeiro</strong> se pelo menos uma das proposições envolvidas for verdadeira.</p>
+                    
+                    <table>
+                        <tr><th>A</th><th>B</th><th>A ∨ B</th></tr>
+                        <tr><td>V</td><td>V</td><td class="v-true">V</td></tr>
+                        <tr><td>V</td><td>F</td><td class="v-true">V</td></tr>
+                        <tr><td>F</td><td>V</td><td class="v-true">V</td></tr>
+                        <tr><td>F</td><td>F</td><td class="f-false">F</td></tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">2. A Aplicação Prática na Computação</h2>
+        <p>Como os softwares e hardwares utilizam essas regras matemáticas para tomar decisões e funcionar.</p>
+
+        <div class="grid-logica">
+            
+            <div class="card">
+                <div class="card-header">Hardwares: Portas Lógicas</div>
+                <div class="card-body">
+                    <p>Os processadores de computadores e celulares contêm bilhões de transistores que agem como interruptores físicos baseados na lógica booleana.</p>
+                    <ul>
+                        <li>A tabela do <strong>"E"</strong> vira a porta física <strong>AND</strong>.</li>
+                        <li>A tabela do <strong>"OU"</strong> vira a porta física <strong>OR</strong>.</li>
+                        <li>A negação vira a porta <strong>NOT</strong> (inverte 0 para 1 e vice-versa).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Softwares: Condicionais (Se / If)</div>
+                <div class="card-body">
+                    <p>Qualquer programa de computador toma decisões utilizando os conectivos lógicos da matemática em blocos condicionais.</p>
+                    
+                    <div class="code-box">
+                        <strong>Exemplo em código:</strong><br>
+                        if (usuarioLogado == true && senhaCorreta == true) {<br>
+                        &nbsp;&nbsp;// Permite o acesso<br>
+                        } else {<br>
+                        &nbsp;&nbsp;// Bloqueia o acesso<br>
+                        }
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Página Educativa • Raciocínio Lógico, Álgebra Booleana e Algoritmos</p>
+    </footer>
+
+</body>
+</html>

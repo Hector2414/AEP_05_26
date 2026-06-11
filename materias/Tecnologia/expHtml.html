@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entendendo o HTML</title>
+    <style>
+        :root {
+            --primary-color: #2b6cb0;
+            --secondary-color: #3182ce;
+            --bg-color: #f7fafc;
+            --card-bg: #ffffff;
+            --text-color: #2d3748;
+            --accent-color: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .intro {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+            font-size: 1.6rem;
+        }
+
+        .grid-html {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .grid-html {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid var(--accent-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .code-box {
+            background-color: #edf2f7;
+            padding: 0.8rem;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            border-left: 3px solid var(--secondary-color);
+            color: #2c5282;
+        }
+
+        .html-tag {
+            color: #b7791f;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #718096;
+            font-size: 0.9rem;
+            margin-top: 4rem;
+            border-top: 1px solid var(--accent-color);
+        }
+    </style>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Desvendando o HTML</h1>
+        <p>A linguagem de marcação que estrutura e dá vida à internet</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="#conteudo">Conteúdo</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h3>O Esqueleto da Web</h3>
+            <p>O <strong>HTML</strong> (Linguagem de Marcação de Hipertexto) não é uma linguagem de programação, mas sim uma <strong>linguagem de marcação</strong>. Ela serve para definir a estrutura e o conteúdo de uma página web, indicando ao navegador o que é um título, o que é um parágrafo, onde ficam as imagens e como os links se conectam.</p>
+        </section>
+
+        <h2 class="section-title">1. Como o HTML funciona?</h2>
+        <p>A base do HTML baseia-se em elementos encapsulados por etiquetas, conhecidas popularmente como tags.</p>
+
+        <div class="grid-html">
+            
+            <div class="card">
+                <div class="card-header">Anatomia de uma Tag</div>
+                <div class="card-body">
+                    <p>A maioria das tags possui uma abertura, o conteúdo interno e um fechamento sinalizado com uma barra (<span class="html-tag">/</span>).</p>
+                    
+                    <div class="code-box">
+                        &lt;<span class="html-tag">p</span>&gt;Isto é um parágrafo.&lt;/<span class="html-tag">p</span>&gt;
+                    </div>
+                    <p style="margin-top: 1rem;"><small>O navegador interpreta essa instrução e exibe apenas o texto de forma limpa na tela.</small></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Marcação Semântica</div>
+                <div class="card-body">
+                    <p>Tags semânticas dão significado ao conteúdo, ajudando os motores de busca (como o Google) e os leitores de tela a entenderem a função de cada parte do site.</p>
+                    <ul>
+                        <li><span class="html-tag">&lt;header&gt;</span>: Cabeçalho da página.</li>
+                        <li><span class="html-tag">&lt;main&gt;</span>: Conteúdo principal.</li>
+                        <li><span class="html-tag">&lt;footer&gt;</span>: Rodapé do site.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">2. A Estrutura Essencial</h2>
+        <p>Todo arquivo HTML válido precisa seguir uma árvore de dependências padrão para ser reconhecido corretamente pelos navegadores.</p>
+
+        <div class="grid-html">
+            
+            <div class="card" style="grid-column: 1 / -1;">
+                <div class="card-header">O Modelo Padrão (Template)</div>
+                <div class="card-body">
+                    <p>Veja a hierarquia mínima de códigos necessária para começar qualquer página na internet:</p>
+                    
+                    <div class="code-box" style="font-size: 0.85rem; line-height: 1.4;">
+                        &lt;!DOCTYPE html&gt; <span style="color:#718096;">&lt;!-- Avisa ao navegador que é HTML5 --&gt;</span><br>
+                        &lt;<span class="html-tag">html</span> lang="pt-BR"&gt;<br>
+                        &nbsp;&nbsp;&lt;<span class="html-tag">head</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="html-tag">meta</span> charset="UTF-8"&gt; <span style="color:#718096;">&lt;!-- Permite acentos --&gt;</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="html-tag">title</span>&gt;Título da Aba&lt;/<span class="html-tag">title</span>&gt;<br>
+                        &nbsp;&nbsp;&lt;/<span class="html-tag">head</span>&gt;<br>
+                        &nbsp;&nbsp;&lt;<span class="html-tag">body</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="html-tag">h1</span>&gt;Olá, Mundo!&lt;/<span class="html-tag">h1</span>&gt; <span style="color:#718096;">&lt;!-- Conteúdo visível --&gt;</span><br>
+                        &nbsp;&nbsp;&lt;/<span class="html-tag">body</span>&gt;<br>
+                        &lt;/<span class="html-tag">html</span>&gt;
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Página Educativa • Introdução à Linguagem de Marcação de Hipertexto (HTML)</p>
+    </footer>
+
+</body>
+</html>

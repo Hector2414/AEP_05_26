@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redação de Texto Dissertativo</title>
+    <style>
+        :root {
+            --primary-color: #2b6cb0;
+            --secondary-color: #3182ce;
+            --bg-color: #f7fafc;
+            --card-bg: #ffffff;
+            --text-color: #2d3748;
+            --accent-color: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .intro {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+            font-size: 1.6rem;
+        }
+
+        .grid-redacao {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .grid-redacao {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid var(--accent-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .exemplo-box {
+            background-color: #edf2f7;
+            padding: 0.8rem;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            margin-top: 1rem;
+            border-left: 3px solid var(--secondary-color);
+        }
+
+        .conceito-chave {
+            color: #2c5282;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #718096;
+            font-size: 0.9rem;
+            margin-top: 4rem;
+            border-top: 1px solid var(--accent-color);
+        }
+    </style>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+
+
+    <header>
+        <h1>A Arte da Redação</h1>
+        <p>Técnicas estruturais para organizar ideias e defender pontos de vista</p>
+    </header>
+
+        <nav>
+        <ul>
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="#conteudo">Conteúdo</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h3>O Texto Dissertativo-Argumentativo</h3>
+            <p>Escrever bem não depende de inspiração, mas sim de <strong>método e estrutura</strong>. O texto dissertativo é aquele em que o autor expõe um tema, discute um problema e defende uma opinião baseada em fatos e argumentos sólidos, dividindo-se rigidamente em três blocos essenciais.</p>
+        </section>
+
+        <h2 class="section-title">1. A Estrutura do Texto</h2>
+        <p>Todo texto dissertativo de sucesso deve respeitar a divisão clássica de parágrafos para guiar o leitor com clareza.</p>
+
+        <div class="grid-redacao">
+            
+            <div class="card">
+                <div class="card-header">Introdução (O Começo)</div>
+                <div class="card-body">
+                    <p>Geralmente ocupa o 1º parágrafo. Apresenta o tema ao leitor e define a <span class="conceito-chave">Tese</span> (a ideia central ou o posicionamento que você vai defender ao longo do texto).</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Foco principal:</strong> Contextualizar o problema de forma clara e deixar evidente qual é o seu ponto de vista logo de cara.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Desenvolvimento (O Meio)</div>
+                <div class="card-body">
+                    <p>Ocupa de 2 a 3 parágrafos. É onde você apresenta os <span class="conceito-chave">Argumentos</span>. Cada parágrafo deve explorar uma justificativa diferente (dados, estatísticas ou filósofos) que comprove a sua tese.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Foco principal:</strong> Explicar os porquês do problema ocorrer e usar evidências legítimas, evitando achismos.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="grid-column: 1 / -1;">
+                <div class="card-header">Conclusão (O Fim)</div>
+                <div class="card-body">
+                    <p>Ocupa o último parágrafo. Serve para fechar o raciocínio, retomando a tese apresentada na introdução. Em modelos formais (como o ENEM), exige-se uma <span class="conceito-chave">Proposta de Intervenção</span> — uma solução prática para o problema discutido.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Elementos da Solução:</strong> <br>
+                        • <strong>Quem</strong> fará? (Agente) | • <strong>O que</strong> fará? (Ação) | • <strong>Como</strong> fará? (Meio/Modo) | • Para que serve? (Efeito)
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">2. Critérios de uma Redação Nota 1000</h2>
+        <p>Além da estrutura, a clareza textual depende de dois conceitos linguísticos vitais que andam sempre de mãos dadas.</p>
+
+        <div class="grid-redacao">
+            
+            <div class="card">
+                <div class="card-header">Coesão Textual</div>
+                <div class="card-body">
+                    <p>É a ligação física e gramatical entre as frases e parágrafos. É feita através do uso correto de conectivos (como: <em>"além disso", "portanto", "contudo", "por outro lado"</em>).</p>
+                    <p><small>Garante que o texto flua como uma corrente, sem frases soltas.</small></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Coerência Textual</div>
+                <div class="card-body">
+                    <p>É a lógica das ideias. Significa que os seus argumentos não podem se contradizer ao longo do texto.</p>
+                    <p><small>Garante que o texto faça sentido do começo ao fim e que a sua opinião permaneça firme e defensável.</small></p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Página Educativa • Produção Textual e Estrutura Dissertativa-Argumentativa</p>
+    </footer>
+
+</body>
+</html>

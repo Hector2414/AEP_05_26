@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background: linear-gradient(
+        135deg,
+        #1e3a8a,
+        #2563eb,
+        #3b82f6
+    );
+}
+
+.cadastro-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cadastro-box{
+    width: 100%;
+    max-width: 480px;
+
+    background-color: #ffffff;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+    animation: aparecer 0.6s ease;
+}
+
+.logo{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo h1{
+    color: #1e3a8a;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.logo p{
+    color: #64748b;
+}
+
+.cadastro-box h2{
+    text-align: center;
+    color: #1e293b;
+    margin-bottom: 30px;
+}
+
+.input-group{
+    margin-bottom: 18px;
+}
+
+.input-group label{
+    display: block;
+    margin-bottom: 8px;
+
+    color: #334155;
+    font-weight: 600;
+}
+
+.input-group input{
+    width: 100%;
+
+    padding: 14px;
+
+    border: 2px solid #cbd5e1;
+    border-radius: 10px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+.input-group input:focus{
+    border-color: #2563eb;
+
+    box-shadow: 0 0 8px rgba(37, 99, 235, 0.25);
+}
+
+.termos{
+    margin: 20px 0;
+    font-size: 0.9rem;
+    color: #475569;
+}
+
+.termos label{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.termos input{
+    margin-top: 3px;
+}
+
+button{
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #2563eb;
+    color: white;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.login,
+.voltar{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login a,
+.voltar a{
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login a:hover,
+.voltar a:hover{
+    text-decoration: underline;
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 480px){
+
+    .cadastro-box{
+        padding: 30px 25px;
+    }
+
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entendendo o CSS</title>
+    <style>
+        :root {
+            --primary-color: #2b6cb0;
+            --secondary-color: #3182ce;
+            --bg-color: #f7fafc;
+            --card-bg: #ffffff;
+            --text-color: #2d3748;
+            --accent-color: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .intro {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+            font-size: 1.6rem;
+        }
+
+        .grid-css {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .grid-css {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid var(--accent-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .code-box {
+            background-color: #edf2f7;
+            padding: 0.8rem;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            border-left: 3px solid var(--secondary-color);
+            color: #2d3748;
+        }
+
+        .css-selector { color: #9c4221; font-weight: bold; }
+        .css-prop { color: #2b6cb0; }
+        .css-val { color: #2f855a; }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #718096;
+            font-size: 0.9rem;
+            margin-top: 4rem;
+            border-top: 1px solid var(--accent-color);
+        }
+    </style>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Desvendando o CSS</h1>
+        <p>A folha de estilos que transforma códigos brutos em designs incríveis</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="#conteudo">Conteúdo</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h3>A Roupa do HTML</h3>
+            <p>Se o HTML é o esqueleto de uma página web, o <strong>CSS</strong> (<em>Cascading Style Sheets</em> ou Folhas de Estilo em Cascata) é a pele, a roupa e a maquiagem. Ele é uma linguagem de estilo utilizada para definir a apresentação visual de documentos web, controlando cores, fontes, layouts, espaçamentos e responsividade.</p>
+        </section>
+
+        <!-- SEÇÃO: SINTAXE DO CSS -->
+        <h2 class="section-title">1. Como o CSS funciona?</h2>
+        <p>O CSS funciona aplicando regras visuais a elementos específicos do HTML através de uma sintaxe simples e direta.</p>
+
+        <div class="grid-css">
+            
+            <!-- ANATOMIA DE UMA REGRA -->
+            <div class="card">
+                <div class="card-header">Anatomia de uma Regra</div>
+                <div class="card-body">
+                    <p>Uma regra CSS é composta por um <strong>Seletor</strong> (o elemento que será modificado) e um bloco de declarações contendo <strong>Propriedades</strong> e <strong>Valores</strong>.</p>
+                    
+                    <div class="code-box">
+                        <span class="css-selector">p</span> {<br>
+                        &nbsp;&nbsp;<span class="css-prop">color</span>: <span class="css-val">blue</span>;<br>
+                        &nbsp;&nbsp;<span class="css-prop">font-size</span>: <span class="css-val">16px</span>;<br>
+                        }
+                    </div>
+                </div>
+            </div>
+
+            <!-- O CONCEITO DE CASCATA -->
+            <div class="card">
+                <div class="card-header">O que é a Cascata?</div>
+                <div class="card-body">
+                    <p>O termo "Cascata" significa que as regras de estilo são aplicadas de cima para baixo. Se houver duas regras conflitantes para o mesmo elemento, o navegador geralmente aplicará a que foi declarada por <strong>último</strong> ou a que tiver maior <strong>especificidade</strong>.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SEÇÃO: FORMAS DE INCLUSÃO -->
+        <h2 class="section-title">2. Formas de Aplicar CSS</h2>
+        <p>Existem três maneiras de incluir estilos CSS em um documento HTML, cada uma adequada para diferentes situações.</p>
+
+        <div class="grid-css">
+            
+            <!-- INLINE E INTERNO -->
+            <div class="card">
+                <div class="card-header">CSS Inline e Interno</div>
+                <div class="card-body">
+                    <p><strong>Inline:</strong> Aplicado direto na tag HTML usando o atributo style. Ruim para manutenção.</p>
+                    <div class="code-box" style="margin-bottom: 1rem;">
+                        &lt;p style="<span class="css-prop">color</span>:<span class="css-val">red</span>;"&gt;Texto&lt;/p&gt;
+                    </div>
+                    
+                    <p><strong>Interno:</strong> Escrito dentro da tag <span class="css-selector">&lt;style&gt;</span> no cabeçalho do HTML (exatamente como esta página foi feita).</p>
+                </div>
+            </div>
+
+            <!-- EXTERNO -->
+            <div class="card">
+                <div class="card-header">CSS Externo (Recomendado)</div>
+                <div class="card-body">
+                    <p>Os estilos são salvos em um arquivo separado com a extensão <span class="css-val">.css</span> e vinculados ao HTML através da tag <span class="css-selector">&lt;link&gt;</span> dentro do head.</p>
+                    
+                    <div class="code-box">
+                        &lt;link rel="stylesheet" href="<span class="css-val">estilos.css</span>"&gt;
+                    </div>
+                    <p style="margin-top: 0.5rem;"><small>Permite alterar o visual de centenas de páginas modificando um único arquivo.</small></p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Página Educativa • Introdução às Folhas de Estilo em Cascata (CSS)</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entendendo Java e Spring Boot</title>
+    <style>
+        :root {
+            --primary-color: #2b6cb0;
+            --secondary-color: #3182ce;
+            --bg-color: #f7fafc;
+            --card-bg: #ffffff;
+            --text-color: #2d3748;
+            --accent-color: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .intro {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+            font-size: 1.6rem;
+        }
+
+        .grid-java {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .grid-java {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid var(--accent-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .code-box {
+            background-color: #edf2f7;
+            padding: 0.8rem;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.85rem;
+            margin-top: 1rem;
+            border-left: 3px solid var(--secondary-color);
+            color: #2d3748;
+            line-height: 1.4;
+        }
+
+        .java-annotation { color: #9c4221; font-weight: bold; }
+        .java-keyword { color: #b7791f; font-weight: bold; }
+        .java-type { color: #2b6cb0; }
+        .java-string { color: #2f855a; }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #718096;
+            font-size: 0.9rem;
+            margin-top: 4rem;
+            border-top: 1px solid var(--accent-color);
+        }
+    </style>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Java & Spring Boot</h1>
+        <p>A força do desenvolvimento corporativo robusto e de alta escalabilidade</p>
+    </header>
+
+        <nav>
+        <ul>
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="#conteudo">Conteúdo</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h3>O Motor do Mundo Corporativo</h3>
+            <p>Enquanto linguagens como o JavaScript dominam o navegador, o <strong>Java</strong> é um dos reis do <em>Back-End</em> (os servidores). Ele alimenta sistemas bancários, grandes e-commerce e aplicativos governamentais graças ao seu lema: <em>"Escreva uma vez, rode em qualquer lugar"</em>, proporcionado pela Máquina Virtual Java (JVM).</p>
+        </section>
+
+        <h2 class="section-title">1. A Base: Linguagem Java</h2>
+        <p>Java é uma linguagem de programação madura, fortemente tipada e totalmente orientada a objetos.</p>
+
+        <div class="grid-java">
+            
+            <div class="card">
+                <div class="card-header">A Máquina Virtual (JVM)</div>
+                <div class="card-body">
+                    <p>O código Java não é compilado diretamente para o processador do computador. Ele vira <em>Bytecode</em>, um formato intermediário lido pela <strong>JVM</strong>. Isso garante que o mesmo programa rode perfeitamente no Windows, no Linux ou em um servidor na nuvem.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Orientação a Objetos (POO)</div>
+                <div class="card-body">
+                    <p>O Java força o desenvolvedor a estruturar o código replicando conceitos do mundo real através de classes, heranças e encapsulamento. É essa rigidez que impede que grandes softwares virem uma bagunça impossível de atualizar.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">2. A Revolução do Spring Boot</h2>
+        <p>Configurar um projeto Java do zero costumava ser trabalhoso. O <strong>Spring Boot</strong> nasceu para resolver esse problema, funcionando como um acelerador de produtividade.</p>
+
+        <div class="grid-java">
+            
+            <div class="card">
+                <div class="card-header">Configuração Pronta e Servidor Embutido</div>
+                <div class="card-body">
+                    <p>Antigamente era preciso instalar e configurar um servidor web (como o Apache Tomcat) manualmente. O Spring Boot já traz o <strong>Tomcat embutido</strong>. Seu software vira um arquivo executável simples que já sabe como rodar na internet.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Dependências Modulares (Starters)</div>
+                <div class="card-body">
+                    <p>Se você quer conectar um banco de dados ou criar um sistema de login, basta adicionar um "Starter" específico nas configurações. O Spring Boot cuida de baixar e harmonizar todas as bibliotecas necessárias automaticamente.</p>
+                </div>
+            </div>
+
+            <div class="card" style="grid-column: 1 / -1;">
+                <div class="card-header">Funcionalidade Principal: Criar APIs Rest de Forma Rápida</div>
+                <div class="card-body">
+                    <p>O Spring Boot simplifica a criação de rotas web utilizando <strong>Anotações</strong> (os códigos que começam com <span class="java-annotation">@</span>). Veja como criar um endpoint de boas-vindas:</p>
+                    
+                    <div class="code-box">
+                        <span class="java-annotation">@RestController</span><br>
+                        <span class="java-keyword">public class</span> <span class="java-type">OlaController</span> {<br><br>
+                        
+                        &nbsp;&nbsp;<span class="java-annotation">@GetMapping</span>(<span class="java-string">"/boas-vindas"</span>)<br>
+                        &nbsp;&nbsp;<span class="java-keyword">public</span> <span class="java-type">String</span> <span class="java-method">saudar</span>() {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="java-keyword">return</span> <span class="java-string">"Olá! Esta mensagem veio de um servidor Java com Spring Boot."</span>;<br>
+                        &nbsp;&nbsp;}<br>
+                        }
+                    </div>
+                    <p style="margin-top: 1rem;"><small>Ao acessar o endereço <code>/boas-vindas</code>, o framework intercepta a requisição do usuário e responde com o texto definido imediatamente.</small></p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Página Educativa • Desenvolvimento Corporativo com Java e Spring Boot</p>
+    </footer>
+
+</body>
+</html>
