@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inglês Prático: Present Continuous</title>
+    <style>
+        :root {
+            --primary-color: #4a4e69; /* Roxo acinzentado / Foco Estrutural */
+            --secondary-color: #2a9d8f; /* Verde-azulado / Ação em Progresso */
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #2b2d42;
+            --accent-color: #e9ecef;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), #22223b);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-bottom: 4px solid var(--secondary-color);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: #22223b;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: var(--secondary-color);
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .intro {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+            font-size: 1.6rem;
+        }
+
+        .grid-conversacao {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .grid-conversacao {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid var(--accent-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .exemplo-box {
+            background-color: #edf2f7;
+            padding: 0.8rem;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            margin-top: 1rem;
+            border-left: 3px solid var(--secondary-color);
+        }
+
+        .dados-conjunto {
+            font-family: monospace;
+            font-weight: bold;
+            color: #1d3557;
+            background: #e2e8f0;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #718096;
+            font-size: 0.9rem;
+            margin-top: 4rem;
+            border-top: 1px solid var(--accent-color);
+        }
+    </style>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Present Continuous</h1>
+        <p>Descrevendo ações que estão acontecendo exatamente agora</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="#estruturas">Estruturas</a></li>
+            <li><a href="#regras">Regras do ING</a></li>
+            <li><a href="#exemplos">Exemplos Práticos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h3>Ações em Andamento</h3>
+            <p>O <strong>Present Continuous</strong> (ou Present Progressive) é o tempo verbal utilizado para falar sobre coisas que estão ocorrendo no momento da fala, situações temporárias ou planos futuros confirmados. No português, ele equivale ao nosso gerúndio (fazendo, correndo, estudando).</p>
+        </section>
+
+        <h2 id="estruturas" class="section-title">1. A Estrutura Base</h2>
+        <p>Para construir frases neste tempo verbal, você sempre precisará de um sujeito, o <strong>Verb To Be</strong> correspondente e o verbo principal com a terminação <strong>-ing</strong>.</p>
+
+        <div class="grid-conversacao">
+            
+            <div class="card">
+                <div class="card-header">Afirmativa & Negativa</div>
+                <div class="card-body">
+                    <p>Basta combinar o pronome, o verbo To Be (am/is/are) e acrescentar o <em>not</em> se quiser negar a ação.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Afirmativas:</strong><br>
+                        • <span class="dados-conjunto">I am studying</span> (Eu estou estudando)<br>
+                        • <span class="dados-conjunto">She is working</span> (Ela está trabalhando)<br><br>
+                        
+                        <strong>Negativas:</strong><br>
+                        • <span class="dados-conjunto">They are not playing</span> (Eles não estão jogando)<br>
+                        • <span class="dados-conjunto">He isn't sleeping</span> (Ele não está dormindo)
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Interrogativa (Perguntas)</div>
+                <div class="card-body">
+                    <p>Para fazer perguntas, o verbo To Be muda de posição e passa a ser colocado bem no início da frase, antes do sujeito.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Estrutura de Pergunta:</strong><br>
+                        "Am / Is / Are + Sujeito + Verbo-ING?"<br><br>
+                        
+                        <strong>Exemplos:</strong><br>
+                        • <span class="dados-conjunto">Are you listening?</span> (Você está ouvindo?)<br>
+                        • <span class="dados-conjunto">Is it raining outside?</span> (Está chovendo lá fora?)
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 id="regras" class="section-title">2. Regras Importantes para o sufixo -ING</h2>
+        <p>Embora a regra geral seja apenas colocar <em>-ing</em> no fim do verbo, existem algumas exceções ortográficas fundamentais:</p>
+
+        <div class="grid-conversacao">
+            
+            <div class="card">
+                <div class="card-header">Verbos terminados em "E"</div>
+                <div class="card-body">
+                    <p>Quando o verbo termina com a letra "e" muda-se a ortografia: remove-se o "e" antes de adicionar a terminação.</p>
+                    
+                    <div class="exemplo-box">
+                        • Dance ➔ <span class="dados-conjunto">Dancing</span> (Dançando)<br>
+                        • Write ➔ <span class="dados-conjunto">Writing</span> (Escrevendo)<br>
+                        • Make ➔ <span class="dados-conjunto">Making</span> (Fazendo)
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">A Regra do CVC (Consoante-Vogal-Consoante)</div>
+                <div class="card-body">
+                    <p>Se o verbo for curto (uma sílaba) e terminar na sequência CVC, duplica-se a última consoante antes do sufixo.</p>
+                    
+                    <div class="exemplo-box">
+                        • Run ➔ <span class="dados-conjunto">Running</span> (Correndo)<br>
+                        • Swim ➔ <span class="dados-conjunto">Swimming</span> (Nadando)<br>
+                        • Sit ➔ <span class="dados-conjunto">Sitting</span> (Sentando)
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="grid-column: 1 / -1;" id="exemplos">
+                <div class="card-header">Diálogo Contextualizado</div>
+                <div class="card-body">
+                    <p>Veja como essas estruturas se comportam naturalmente em uma conversa telefônica rotineira.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>A:</strong> Hey! What are you doing right now? (Ei! O que você está fazendo bem agora?)<br>
+                        <strong>B:</strong> Hi! <span class="dados-conjunto">I am cooking dinner</span> for my family. (Oi! Estou cozinhando o jantar para minha família.)<br>
+                        <strong>A:</strong> Nice! Is your brother helping you? (Legal! O seu irmão está te ajudando?)<br>
+                        <strong>B:</strong> No, he isn't. <span class="dados-conjunto">He is watching a movie</span> in the living room. (Não, não está. Ele está assistindo a um filme na sala.)
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Página Educativa de Idiomas • Foco em Gramática Prática e Estrutural da Língua Inglesa</p>
+    </footer>
+
+</body>
+</html>

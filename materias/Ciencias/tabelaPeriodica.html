@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Tabela Periódica - Química Básica</title>
+    <style>
+        :root {
+            --primary-color: #1c4d3a; /* Verde esmeralda escuro químico */
+            --secondary-color: #2c7a5f; /* Verde menta laboratório */
+            --bg-color: #f7fafc;
+            --card-bg: #ffffff;
+            --text-color: #2d3748;
+            --accent-color: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .intro {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+            font-size: 1.6rem;
+        }
+
+        .grid-quimica {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .grid-quimica {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid var(--accent-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .card-body h4 {
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .exemplo-box {
+            background-color: #edf2f7;
+            padding: 0.8rem;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            margin-top: 1rem;
+            border-left: 3px solid var(--secondary-color);
+        }
+
+        .dados-conjunto {
+            font-family: monospace;
+            font-weight: bold;
+            color: #1c4d3a;
+            background: #e2e8f0;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #718096;
+            font-size: 0.9rem;
+            margin-top: 4rem;
+            border-top: 1px solid var(--accent-color);
+        }
+    </style>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>A Tabela Periódica</h1>
+        <p>A organização dos elementos químicos, suas propriedades e estruturas atômicas</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="#conteudo">Conteúdo</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h3>O Mapa da Matéria</h3>
+            <p>A Tabela Periódica é uma ferramenta sistemática que organiza todos os elementos químicos conhecidos no universo. Proposta inicialmente por Dmitri Mendeleev, ela agrupa os elementos em ordem crescente de <strong>Número Atômico (prótons)</strong>, permitindo prever o comportamento, a reatividade e as propriedades físicas da matéria.</p>
+        </section>
+
+        <h2 class="section-title">1. Anatomia de um Elemento</h2>
+        <p>Cada quadrado da tabela funciona como uma carteira de identidade que resume as características fundamentais daquele átomo.</p>
+
+        <div class="grid-quimica">
+            
+            <div class="card">
+                <div class="card-header">Número Atômico (Z)</div>
+                <div class="card-body">
+                    <p>Indica a <strong>quantidade de prótons</strong> existentes no núcleo do átomo. É o número atômico que define a identidade exclusiva de cada elemento químico.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Exemplo:</strong> O elemento com <span class="dados-conjunto">Z = 6</span> será sempre o Carbono, não importando a quantidade de nêutrons ou elétrons que ele possua.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Massa Atômica (A)</div>
+                <div class="card-body">
+                    <p>Representa a soma da massa dos <strong>prótons e nêutrons</strong> localizados no núcleo. A massa dos elétrons é tão ínfima que é desconsiderada nesse cálculo geral.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Cálculo do Núcleo:</strong> <span class="dados-conjunto">A = p + n</span><br>
+                        Sabendo a massa (A) e os prótons (Z), descobrimos os nêutrons fazendo: n = A − Z.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="grid-column: 1 / -1;">
+                <div class="card-header">Símbolo Químico Universal</div>
+                <div class="card-body">
+                    <p>Uma abreviação internacional de uma ou duas letras. A primeira letra é sempre maiúscula e, se houver uma segunda, ela será estritamente minúscula. Muitos símbolos derivam de seus nomes originais em latim ou grego.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Exemplos de Símbolos:</strong> 
+                        <span class="dados-conjunto">H</span> (Hidrogênio), 
+                        <span class="dados-conjunto">Na</span> (Sódio, do latim <em>Natrium</em>) e 
+                        <span class="dados-conjunto">Fe</span> (Ferro, do latim <em>Ferrum</em>).
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">2. Organização em Linhas e Colunas</h2>
+        <p>A posição exata de um elemento na tabela revela sua distribuição eletrônica e sua afinidade de ligações.</p>
+
+        <div class="grid-quimica">
+            
+            <div class="card">
+                <div class="card-header">Períodos (Linhas Horizontais)</div>
+                <div class="card-body">
+                    <p>A tabela possui exatamente <strong>7 períodos</strong>. O número da linha indica diretamente a quantidade de <strong>camadas eletrônicas</strong> (níveis de energia) que o átomo possui para distribuir seus elétrons.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Leitura da Linha:</strong> Elementos situados no <span class="dados-conjunto">3º Período</span> possuem seus elétrons distribuídos em 3 camadas (K, L e M).
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Grupos ou Famílias (Colunas)</div>
+                <div class="card-body">
+                    <p>As <strong>18 colunas verticais</strong> reúnem elementos que compartilham propriedades químicas extremamente semelhantes porque possuem a mesma quantidade de elétrons na camada de valência (última camada).</p>
+                    <ul>
+                        <li><strong>Grupo 1 (Alcalinos):</strong> Altamente reativos com a água (ex: Lítio, Sódio).</li>
+                        <li><strong>Grupo 18 (Gases Nobres):</strong> Totalmente estáveis, dificilmente se ligam a outros elementos (ex: Hélio, Neônio).</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Página Educativa de Ciências • Introdução à Química Geral e Teoria Atômica</p>
+    </footer>
+
+</body>
+</html>

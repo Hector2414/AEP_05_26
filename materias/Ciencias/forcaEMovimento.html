@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Força e Movimento - Física Básica</title>
+    <style>
+        :root {
+            --primary-color: #7b341e; /* Vermelho-tijolo escuro mecânico */
+            --secondary-color: #c05621; /* Laranja energia / dinâmica */
+            --bg-color: #f7fafc;
+            --card-bg: #ffffff;
+            --text-color: #2d3748;
+            --accent-color: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .intro {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+            font-size: 1.6rem;
+        }
+
+        .grid-fisica {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .grid-fisica {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid var(--accent-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .card-body h4 {
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .exemplo-box {
+            background-color: #edf2f7;
+            padding: 0.8rem;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            margin-top: 1rem;
+            border-left: 3px solid var(--secondary-color);
+        }
+
+        .dados-conjunto {
+            font-family: monospace;
+            font-weight: bold;
+            color: #7b341e;
+            background: #e2e8f0;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #718096;
+            font-size: 0.9rem;
+            margin-top: 4rem;
+            border-top: 1px solid var(--accent-color);
+        }
+    </style>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Força e Movimento</h1>
+        <p>Conceitos fundamentais da Mecânica Clássica e as Leis de Newton</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="#conteudo">Conteúdo</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h3>A Base da Cinemática e da Dinâmica</h3>
+            <p>A Mecânica é a área da Física que estuda o comportamento dos corpos. Enquanto a <strong>Cinemática</strong> se preocupa em descrever como os corpos se movem (velocidade e aceleração), a <strong>Dinâmica</strong> investiga as causas desse movimento: as <strong>Forças</strong>, que são interações capazes de alterar o estado de repouso ou de movimento de um objeto.</p>
+        </section>
+
+        <h2 class="section-title">1. As Três Leis de Newton</h2>
+        <p>Formuladas por Sir Isaac Newton, estas leis explicam praticamente qualquer movimento do nosso cotidiano.</p>
+
+        <div class="grid-fisica">
+            
+            <div class="card">
+                <div class="card-header">1ª Lei: Princípio da Inércia</div>
+                <div class="card-body">
+                    <p>Um corpo em repouso tende a permanecer em repouso, e um corpo em movimento tende a continuar em movimento retilíneo uniforme, a menos que uma <strong>força externa</strong> atue sobre ele.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Exemplo Prático:</strong> Quando um ônibus freia bruscamente, os passageiros são <span class="dados-conjunto">Lançados para frente</span> porque seus corpos tendem a manter o movimento que já tinham.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">2ª Lei: Princípio Fundamental</div>
+                <div class="card-body">
+                    <p>A força resultante aplicada sobre um corpo é proporcional à aceleração que ele adquire, dependendo diretamente da sua massa.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Fórmula:</strong> <span class="dados-conjunto">F = m · a</span><br>
+                        <strong>F</strong> = Força (Newtons)<br>
+                        <strong>m</strong> = Massa (kg) • <strong>a</strong> = Aceleração (m/s²)
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="grid-column: 1 / -1;">
+                <div class="card-header">3ª Lei: Ação e Reação</div>
+                <div class="card-body">
+                    <p>Para toda força de <strong>Ação</strong> aplicada sobre um corpo, existe sempre uma força de <strong>Reação</strong> de mesma intensidade (valor), mesma direção (linha), mas em <strong>sentido oposto</strong>.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Aplicação Mecânica:</strong> O foguete sobe porque seus motores <span class="dados-conjunto">Empurram os gases para baixo</span> (Ação), e os gases consequentemente <span class="dados-conjunto">Empurram o foguete para cima</span> (Reação).
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">2. Forças Especiais do Cotidiano</h2>
+        <p>No nosso dia a dia, a gravidade e o contato entre superfícies geram forças específicas invisíveis que influenciam a movimentação.</p>
+
+        <div class="grid-fisica">
+            
+            <div class="card">
+                <div class="card-header">Força Peso (Gravidade)</div>
+                <div class="card-body">
+                    <p>É a força de atração que a Terra (ou qualquer corpo celeste) exerce sobre a massa de um objeto.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Cálculo do Peso:</strong> <span class="dados-conjunto">P = m · g</span><br>
+                        A gravidade média na Terra é de aproximadamente <span class="dados-conjunto">9,8 m/s²</span>.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Força de Atrito</div>
+                <div class="card-body">
+                    <p>É uma força que se <strong>opõe ao movimento</strong> de um objeto. Ela surge devido às microscópicas irregularidades existentes entre as superfícies que estão em contato.</p>
+                    <ul>
+                        <li><strong>Benéfico:</strong> Sem o atrito, nossos pés escorregariam e os carros não conseguiriam frear.</li>
+                        <li><strong>Maléfico:</strong> Desgasta peças de motores e gera calor excessivo.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Página Educativa de Ciências • Conceitos Básicos de Física Geral e Mecânica</p>
+    </footer>
+
+</body>
+</html>

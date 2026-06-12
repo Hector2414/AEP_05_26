@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universo da Arte: Artes Visuais</title>
+    <style>
+        :root {
+            --primary-color: #24292e; /* Grafite Profundo / Design e Contemporaneidade */
+            --secondary-color: #0284c7; /* Azul Ciano / Criatividade e Tecnologia */
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #1e293b;
+            --accent-color: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), #0f172a);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-bottom: 4px solid var(--secondary-color);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: #0f172a;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: var(--secondary-color);
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .intro {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+            font-size: 1.6rem;
+        }
+
+        .grid-conversacao {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .grid-conversacao {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid var(--accent-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .exemplo-box {
+            background-color: #f1f5f9;
+            padding: 0.8rem;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            margin-top: 1rem;
+            border-left: 3px solid var(--secondary-color);
+        }
+
+        .dados-conjunto {
+            font-family: monospace;
+            font-weight: bold;
+            color: #0369a1;
+            background: #e2e8f0;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-top: 4rem;
+            border-top: 1px solid var(--accent-color);
+        }
+    </style>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Artes Visuais</h1>
+        <p>A linguagem das formas, cores e mídias que estimulam a visão humana</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="#tradicionais">Mídias Tradicionais</a></li>
+            <li><a href="#contemporaneas">Mídias Modernas</a></li>
+            <li><a href="#elementos">Elementos Visuais</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h3>A Arte que se Manifesta pelo Olhar</h3>
+            <p>As <strong>Artes Visuais</strong> representam o conjunto de manifestações artísticas que apelam essencialmente para a nossa percepção visual. Esse campo amplo evoluiu das técnicas clássicas bidimensionais para englobar novas mídias tecnológicas, transformando a forma como o público interage e consome a estética no dia a dia.</p>
+        </section>
+
+        <h2 id="tradicionais" class="section-title">1. Expressões Plásticas Tradicionais</h2>
+        <p>Técnicas históricas fundamentais que moldaram a história da civilização por meio da manipulação física de pigmentos e materiais.</p>
+
+        <div class="grid-conversacao">
+            
+            <div class="card">
+                <div class="card-header">Pintura e Desenho</div>
+                <div class="card-body">
+                    <p>A representação bidimensional por excelência. Utiliza o suporte (tela, papel, parede) para criar ilusões de profundidade, luz e emoção.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Técnicas Clássicas:</strong><br>
+                        • <span class="dados-conjunto">Pintura a Óleo</span> (Secagem lenta e alta mistura de cores)<br>
+                        • <span class="dados-conjunto">Afresco</span> (Pintura feita sobre argamassa fresca)<br><br>
+                        
+                        <strong>O Desenho:</strong><br>
+                        Funciona frequentemente como a <span class="dados-conjunto">estrutura base</span> estrutural para qualquer obra visual.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Escultura e Gravura</div>
+                <div class="card-body">
+                    <p>A tridimensionalidade e a reprodutibilidade técnica. A escultura ocupa o espaço real, enquanto a gravura permite a multiplicação da imagem.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Processos Escultóricos:</strong><br>
+                        Modelagem, entalhe e fundição de metal.<br><br>
+                        
+                        <strong>Tipos de Gravura:</strong><br>
+                        A <span class="dados-conjunto">Xilogravura</span> (matriz em madeira) e a calcografia (matriz em metal) funcionam como espécies de carimbos artísticos.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 id="contemporaneas" class="section-title">2. A Era Digital e Contemporânea</h2>
+        <p>Com o avanço da tecnologia e as mudanças conceituais do século XX, o conceito de "obra de arte" expandiu-se drasticamente.</p>
+
+        <div class="grid-conversacao">
+            
+            <div class="card">
+                <div class="card-header">Fotografia e Cinema</div>
+                <div class="card-body">
+                    <p>A captura mecânica da luz revolucionou as artes visuais, tirando da pintura a obrigação de registrar fielmente os fatos e a realidade.</p>
+                    
+                    <div class="exemplo-box">
+                        • Fotografia ➔ <span class="dados-conjunto">Composição estática</span> da luz<br>
+                        • Cinema ➔ <span class="dados-conjunto">A imagem em movimento</span> e o tempo<br>
+                        • Videoarte ➔ Uso da tecnologia de vídeo para experimentação artística
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Arte Digital e Novas Mídias</div>
+                <div class="card-body">
+                    <p>Obras produzidas em ambientes virtuais computacionais. Os pixels substituem as tintas e as telas digitais substituem os tecidos de linho.</p>
+                    
+                    <div class="exemplo-box">
+                        • Pintura Digital ➔ <span class="dados-conjunto">Uso de tablets e softwares</span> gráficos<br>
+                        • Modelagem 3D ➔ Escultura em ambientes virtuais<br>
+                        • Instalações Interativas ➔ Arte que reage ao público
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="grid-column: 1 / -1;" id="elementos">
+                <div class="card-header">Análise Técnica dos Elementos Visuais</div>
+                <div class="card-body">
+                    <p>Abaixo está uma demonstração gramatical/técnica de como os artistas organizam qualquer imagem para criar um impacto visual.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Ponto e Linha:</strong> Os elementos mais simples que direcionam o olhar do espectador pela imagem.<br>
+                        <strong>A Cor:</strong> Dividida em <span class="dados-conjunto">Matiz, Valor e Intensidade</span> para gerar contrastes térmicos ou psicológicos.<br>
+                        <strong>A Textura:</strong> Pode ser tátil (sentida pelo toque na escultura) ou <span class="dados-conjunto">textura visual</span> (uma ilusão criada pela tinta).<br>
+                        <strong>O Espaço:</strong> A relação equilibrada entre a figura principal (espaço positivo) e o fundo (espaço negativo).
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Página Educativa de Artes Visuais • Conteúdo Conceitual sobre Mídias, Técnicas e Sintaxe Visual</p>
+    </footer>
+
+</body>
+</html>

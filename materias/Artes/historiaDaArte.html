@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História da Arte: Linha do Tempo</title>
+    <style>
+        :root {
+            --primary-color: #8b4f30; /* Terracota / Tons Clássicos e Terra */
+            --secondary-color: #b38b34; /* Ouro Velho / Detalhes e Iluminação */
+            --bg-color: #fcfaf7;
+            --card-bg: #ffffff;
+            --text-color: #332c28;
+            --accent-color: #f0e6df;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), #4a2818);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-bottom: 4px solid var(--secondary-color);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: #4a2818;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: var(--secondary-color);
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .intro {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+            font-size: 1.6rem;
+        }
+
+        .grid-conversacao {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .grid-conversacao {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid var(--accent-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .exemplo-box {
+            background-color: #f7ede2;
+            padding: 0.8rem;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            margin-top: 1rem;
+            border-left: 3px solid var(--secondary-color);
+        }
+
+        .dados-conjunto {
+            font-family: monospace;
+            font-weight: bold;
+            color: #5c3a21;
+            background: #ebdcd0;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #8c7a6b;
+            font-size: 0.9rem;
+            margin-top: 4rem;
+            border-top: 1px solid var(--accent-color);
+        }
+    </style>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>História da Arte</h1>
+        <p>A evolução da expressão humana através dos tempos, movimentos e estéticas</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="#antiguidade">Antiguidade</a></li>
+            <li><a href="#modernidade">Modernidade</a></li>
+            <li><a href="#analise">Análise</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h3>O Reflexo da Humanidade</h3>
+            <p>Estudar a <strong>História da Arte</strong> é compreender a própria evolução cultural, social e espiritual do ser humano. Desde as pinturas rupestres até as instalações digitais contemporâneas, a arte funciona como um espelho de sua época, traduzindo pensamentos, angústias e belezas em formas e cores.</p>
+        </section>
+
+        <h2 id="antiguidade" class="section-title">1. Raízes e Renascimento</h2>
+        <p>Movimentos fundamentais que estabeleceram as bases técnicas, conceituais e estéticas do mundo ocidental.</p>
+
+        <div class="grid-conversacao">
+            
+            <div class="card">
+                <div class="card-header">Arte Rupestre e Antiga</div>
+                <div class="card-body">
+                    <p>O início de tudo, onde a arte possuía caráter místico, utilitário e ritualístico, evoluindo depois para as grandes construções e simetrias clássicas.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Principais Marcos:</strong><br>
+                        • <span class="dados-conjunto">Pinturas Rupestres</span> (Registro do cotidiano e caça)<br>
+                        • <span class="dados-conjunto">Arte Egípcia</span> (Foco na espiritualidade e na eternidade)<br><br>
+                        
+                        <strong>Período Clássico:</strong><br>
+                        • Gregos e Romanos focados na busca pela <span class="dados-conjunto">proporção ideal</span> e anatomia perfeita.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">O Renascimento</div>
+                <div class="card-body">
+                    <p>Período de transição para a modernidade (séculos XIV ao XVI) marcado pelo antropocentrismo, redescoberta da ciência e invenção da perspectiva.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Grandes Mestres:</strong><br>
+                        Leonardo da Vinci, Michelangelo e Rafael Sanzio.<br><br>
+                        
+                        <strong>Inovações Técnicas:</strong><br>
+                        Uso do <span class="dados-conjunto">Chiaroscuro</span> (luz e sombra) e da perspectiva linear para criar profundidade realista nas telas.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 id="modernidade" class="section-title">2. As Vanguardas Modernas</h2>
+        <p>A chegada da fotografia e as transformações industriais do século XX forçaram a arte a abandonar a cópia exata da realidade física.</p>
+
+        <div class="grid-conversacao">
+            
+            <div class="card">
+                <div class="card-header">Impressionismo</div>
+                <div class="card-body">
+                    <p>A luz solar e o movimento tornam-se os protagonistas. Os artistas saem dos ateliês para pintar ao ar livre, capturando a impressão imediata.</p>
+                    
+                    <div class="exemplo-box">
+                        • Claude Monet ➔ <span class="dados-conjunto">Pinceladas Soltas</span><br>
+                        • Edgar Degas ➔ <span class="dados-conjunto">Movimento e Luz</span><br>
+                        • Vincent van Gogh ➔ Transição para o expressionismo
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Cubismo e Abstracionismo</div>
+                <div class="card-body">
+                    <p>Ruptura total com a perspectiva tradicional. A realidade passa a ser fragmentada em formas geométricas ou puramente subjetivas.</p>
+                    
+                    <div class="exemplo-box">
+                        • Pablo Picasso ➔ <span class="dados-conjunto">Geometrização</span> (Cubismo)<br>
+                        • Wassily Kandinsky ➔ <span class="dados-conjunto">Arte Abstrata</span> (Puras cores)<br>
+                        • Piet Mondrian ➔ Linhas e cores primárias
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="grid-column: 1 / -1;" id="analise">
+                <div class="card-header">Exemplo Prático de Análise de Obra</div>
+                <div class="card-body">
+                    <p>Veja um modelo de debate crítico simulado sobre como ler uma obra de arte em um ambiente acadêmico ou de galeria.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Crítico A:</strong> Como devemos interpretar as cores vibrantes e distorcidas de "O Grito" de Edvard Munch?<br>
+                        <strong>Crítico B:</strong> Ali, a cor não representa a realidade externa. <span class="dados-conjunto">A pintura expressa o sentimento</span> interior de angústia e solidão do artista.<br>
+                        <strong>Crítico A:</strong> Exatamente. É a transição perfeita onde a emoção do pintor passa a ter mais valor do que a técnica de imitação realista.<br>
+                        <strong>Crítico B:</strong> Por isso o movimento ganhou o nome de <span class="dados-conjunto">Expressionismo</span>.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Página Educativa de História da Arte • Conteúdo sobre Evolução Estética e Movimentos Culturais</p>
+    </footer>
+
+</body>
+</html>

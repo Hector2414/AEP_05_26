@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demografia: Geografia da População</title>
+    <style>
+        :root {
+            --primary-color: #4a1262; /* Roxo escuro demográfico */
+            --secondary-color: #7c3aed; /* Violeta social */
+            --bg-color: #f7fafc;
+            --card-bg: #ffffff;
+            --text-color: #2d3748;
+            --accent-color: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .intro {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+            font-size: 1.6rem;
+        }
+
+        .grid-demografia {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .grid-demografia {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid var(--accent-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .card-body h4 {
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .exemplo-box {
+            background-color: #edf2f7;
+            padding: 0.8rem;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            margin-top: 1rem;
+            border-left: 3px solid var(--secondary-color);
+        }
+
+        .dados-conjunto {
+            font-family: 'Segoe UI', sans-serif;
+            font-weight: bold;
+            color: #4a1262;
+            background: #e2e8f0;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #718096;
+            font-size: 0.9rem;
+            margin-top: 4rem;
+            border-top: 1px solid var(--accent-color);
+        }
+    </style>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Demografia</h1>
+        <p>Análise do crescimento, distribuição, indicadores e fluxos da população mundial</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="#conteudo">Conteúdo</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h3>O que estuda a Demografia?</h3>
+            <p>A Demografia (ou Geografia da População) é a ciência que investiga as dinâmicas das populações humanas. Ela mapeia estatísticas vitais como nascimentos, mortes, envelhecimento e movimentos migratórios, ajudando governos e empresas a planejarem o futuro de suas estruturas socioeconômicas.</p>
+        </section>
+
+        <h2 class="section-title">1. Principais Conceitos Populares</h2>
+        <p>São as terminologias e fórmulas básicas usadas para calcular e entender o tamanho e o arranjo de uma população.</p>
+
+        <div class="grid-demografia">
+            
+            <div class="card">
+                <div class="card-header">População Absoluta vs. Relativa</div>
+                <div class="card-body">
+                    <p>Diferencia a quantidade total de habitantes de uma região da sua real distribuição espacial por quilômetro quadrado.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Pop. Absoluta (País Populoso):</strong> Total bruto de habitantes de um local.<br>
+                        <strong>Pop. Relativa (País Povoado):</strong> Densidade demográfica medida em <span class="dados-conjunto">Habitantes / km²</span>.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Crescimento Demográfico</div>
+                <div class="card-body">
+                    <p>É medido pela soma do <strong>Crescimento Vegetativo</strong> (Nascimentos − Mortes) com o <strong>Saldo Migratório</strong> (Imigrantes − Emigrantes).</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Cálculo do Saldo:</strong> Se nascem mais pessoas do que morrem e entram mais do que saem, a taxa de crescimento é <span class="dados-conjunto">Positiva</span>.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="grid-column: 1 / -1;">
+                <div class="card-header">Taxa de Fecundidade</div>
+                <div class="card-body">
+                    <p>Indica o número médio de filhos que uma mulher teria durante o seu período reprodutivo. É o indicador mais associado às transformações econômicas e à inserção da mulher no mercado de trabalho.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Taxa de Reposição:</strong> Para manter o tamanho da população estável, o índice mundial ideal de fecundidade deve ser de no mínimo <span class="dados-conjunto">2,1 filhos por mulher</span>.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">2. Transição Demográfica e Estrutura Etária</h2>
+        <p>O comportamento histórico das populações acompanha o desenvolvimento das sociedades industriais e urbanas.</p>
+
+        <div class="grid-demografia">
+            
+            <div class="card">
+                <div class="card-header">Transição Demográfica</div>
+                <div class="card-body">
+                    <p>Modelo que explica a evolução histórica das populações em fases: as sociedades saem de taxas altas de natalidade/mortalidade para baixas taxas em ambos os índices.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Países Desenvolvidos:</strong> Já atingiram a fase avançada, enfrentando hoje o <span class="dados-conjunto">Envelhecimento Populacional</span> e falta de mão de obra.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Pirâmides Etárias</div>
+                <div class="card-body">
+                    <p>Gráficos que dividem a população por gênero (homens e mulheres) e por faixas de idade (jovens, adultos e idosos).</p>
+                    <ul>
+                        <li><strong>Base Larga:</strong> Grande quantidade de crianças e jovens (típica de nações subdesenvolvidas).</li>
+                        <li><strong>Topo Largo:</strong> Grande quantidade de idosos e alta expectativa de vida (típica de nações desenvolvidas).</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Página Educativa de Geografia • Estudos Avançados de População e Demografia</p>
+    </footer>
+
+</body>
+</html>

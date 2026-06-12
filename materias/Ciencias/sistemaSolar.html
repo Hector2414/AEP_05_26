@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Sistema Solar - Astronomia Básica</title>
+    <style>
+        :root {
+            --primary-color: #0b132b; /* Azul noturno profundo / Espaço sideral */
+            --secondary-color: #d4af37; /* Dourado solar / Estrelas */
+            --bg-color: #f4f6f9;
+            --card-bg: #ffffff;
+            --text-color: #1c2541;
+            --accent-color: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), #1c2541);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-bottom: 4px solid var(--secondary-color);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #ffffff;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+            color: #e2e8f0;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .intro {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+            font-size: 1.6rem;
+        }
+
+        .grid-astronomia {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .grid-astronomia {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid var(--accent-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+            border-bottom: 2px solid var(--secondary-color);
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .card-body h4 {
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .exemplo-box {
+            background-color: #edf2f7;
+            padding: 0.8rem;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            margin-top: 1rem;
+            border-left: 3px solid var(--primary-color);
+        }
+
+        .dados-conjunto {
+            font-family: monospace;
+            font-weight: bold;
+            color: #0b132b;
+            background: #e2e8f0;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #718096;
+            font-size: 0.9rem;
+            margin-top: 4rem;
+            border-top: 1px solid var(--accent-color);
+        }
+    </style>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>O Sistema Solar</h1>
+        <p>A nossa vizinhança cósmica: a dinâmica dos planetas, astros e a soberania do Sol</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="#conteudo">Conteúdo</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h3>A Nossa Estrutura Gravitacional</h3>
+            <p>O Sistema Solar localiza-se na Via Láctea e compreende um conjunto de corpos celestes que orbitam ao redor de uma estrela central: o <strong>Sol</strong>. Esse sistema se formou há cerca de 4,6 bilhões de anos a partir do colapso de uma gigante nuvem molecular, dando origem aos 8 planetas oficiais, planetas anões, asteroides e cometas que conhecemos hoje.</p>
+        </section>
+
+        <h2 class="section-title">1. A Classificação dos Planetas</h2>
+        <p>Os oito planetas do sistema são divididos em dois grupos principais com base em sua composição física e proximidade do Sol.</p>
+
+        <div class="grid-astronomia">
+            
+            <div class="card">
+                <div class="card-header">Planetas Terrestres (Rochosos)</div>
+                <div class="card-body">
+                    <p>São os quatro planetas mais próximos do Sol. Caracterizam-se por possuírem superfícies sólidas e compactas feitas de rocha e metal, alta densidade e poucos ou nenhum satélite natural.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Planetas Internos:</strong> 
+                        <span class="dados-conjunto">Mercúrio</span>, 
+                        <span class="dados-conjunto">Vênus</span>, 
+                        <span class="dados-conjunto">Terra</span> e 
+                        <span class="dados-conjunto">Marte</span>.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Planetas Jovianos (Gasosos)</div>
+                <div class="card-body">
+                    <p>São os quatro planetas mais distantes. São gigantescos, compostos predominantemente por gases (como hidrogênio e hélio) e fluidos congelados, não possuem superfície sólida definida e contam com complexos sistemas de anéis.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Planetas Externos:</strong> 
+                        <span class="dados-conjunto">Júpiter</span>, 
+                        <span class="dados-conjunto">Saturno</span>, 
+                        <span class="dados-conjunto">Urano</span> e 
+                        <span class="dados-conjunto">Netuno</span>.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="grid-column: 1 / -1;">
+                <div class="card-header">O Caso dos Planetas Anões</div>
+                <div class="card-body">
+                    <p>Em 2006, a União Astronômica Internacional (UAI) redefiniu o conceito de planeta. Para ser um planeta, o astro precisa orbitar o Sol, ser esférico e ter <strong>limpado a sua órbita</strong> (ser dominante em sua trajetória). Corpos que cumprem os primeiros requisitos, mas cruzam a órbita de outros astros, viraram planetas anões.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>O exemplo mais famoso:</strong> <span class="dados-conjunto">Plutão</span> foi rebaixado a planeta anão porque sua gravidade compartilha espaço com o Cinturão de Kuiper. Outros exemplos são Ceres e Éris.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">2. Movimentos Planetários Fundamentais</h2>
+        <p>Todos os planetas realizam dois movimentos principais simultâneos que determinam o tempo e a dinâmica climática de cada mundo.</p>
+
+        <div class="grid-astronomia">
+            
+            <div class="card">
+                <div class="card-header">Movimento de Rotação</div>
+                <div class="card-body">
+                    <p>É o giro que o planeta realiza em torno do seu <strong>próprio eixo invisível</strong>. Esse movimento é o responsável direto pela alternância entre os dias e as noites.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Na Terra:</strong> Leva aproximadamente <span class="dados-conjunto">24 horas</span> para se completar (um dia terrestre).
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Movimento de Translação</div>
+                <div class="card-body">
+                    <p>É a trajetória que o planeta faz ao redor do Sol, desenhando uma órbita elíptica. Esse movimento define a duração de um ano astronômico em cada corpo celeste.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Na Terra:</strong> Leva cerca de <span class="dados-conjunto">365 dias e 6 horas</span>. O acúmulo dessas horas gera o ano bissexto a cada 4 anos.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Página Educativa de Ciências • Introdução à Astronomia e Mecânica Celeste</p>
+    </footer>
+
+</body>
+</html>

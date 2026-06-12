@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climatologia e Mudanças Climáticas</title>
+    <style>
+        :root {
+            --primary-color: #234e52; /* Verde-azulado escuro / Atmosférico */
+            --secondary-color: #319795; /* Turquesa / Climatologia */
+            --bg-color: #f7fafc;
+            --card-bg: #ffffff;
+            --text-color: #2d3748;
+            --accent-color: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .intro {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+            font-size: 1.6rem;
+        }
+
+        .grid-clima {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .grid-clima {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid var(--accent-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .card-body h4 {
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .exemplo-box {
+            background-color: #edf2f7;
+            padding: 0.8rem;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            margin-top: 1rem;
+            border-left: 3px solid var(--secondary-color);
+        }
+
+        .dados-conjunto {
+            font-family: 'Segoe UI', sans-serif;
+            font-weight: bold;
+            color: #234e52;
+            background: #e2e8f0;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #718096;
+            font-size: 0.9rem;
+            margin-top: 4rem;
+            border-top: 1px solid var(--accent-color);
+        }
+    </style>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Climatologia e Mudanças Climáticas</h1>
+        <p>A dinâmica da atmosfera terrestre, os fatores do clima e os impactos das transformações globais</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="#conteudo">Conteúdo</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h3>Tempo vs. Clima</h3>
+            <p>Para compreender a climatologia, a primeira regra é diferenciar dois conceitos vitais: o <strong>Tempo</strong> é o estado momentâneo da atmosfera (se chove ou faz sol agora), enquanto o <strong>Clima</strong> é o padrão estável desse comportamento consolidado após a observação contínua de, no mínimo, 30 anos.</p>
+        </section>
+
+        <h2 class="section-title">1. Elementos e Fatores Climáticos</h2>
+        <p>A interação mecânica e geográfica que define as características climáticas de cada região do planeta.</p>
+
+        <div class="grid-clima">
+            
+            <div class="card">
+                <div class="card-header">Elementos Climáticos</div>
+                <div class="card-body">
+                    <p>São as grandezas físicas mensuráveis que compõem o clima em um dado momento e variam constantemente.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Principais Elementos:</strong> 
+                        <span class="dados-conjunto">Temperatura</span>, 
+                        <span class="dados-conjunto">Umidade do Ar</span> e 
+                        <span class="dados-conjunto">Pressão Atmosférica</span>.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Fatores Climáticos</div>
+                <div class="card-body">
+                    <p>São as características geográficas fixas ou de longa duração que modificam e condicionam os elementos climáticos locais.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Principais Fatores:</strong> 
+                        <span class="dados-conjunto">Latitude</span> (distância da linha do Equador), 
+                        <span class="dados-conjunto">Altitude</span>, Maritimidade e Continentalidade.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="grid-column: 1 / -1;">
+                <div class="card-header">Dinâmicas Globais: El Niño e La Niña</div>
+                <div class="card-body">
+                    <p>Fenômenos oceano-atmosféricos de escala global que alteram os padrões de chuva e temperatura em diversos continentes através do aquecimento ou resfriamento anormal das águas do Oceano Pacífico.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>El Niño:</strong> <span class="dados-conjunto">Aquecimento das águas</span> • Causa secas severas em algumas regiões e chuvas torrenciais em outras.<br>
+                        <strong>La Niña:</strong> <span class="dados-conjunto">Resfriamento das águas</span> • Age de maneira inversa, gerando o resfriamento e alterações pluviais distintas.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">2. O Fenômeno das Mudanças Climáticas</h2>
+        <p>A interferência antrópica (humana) acelerando os ciclos térmicos e biogeoquímicos naturais da Terra.</p>
+
+        <div class="grid-clima">
+            
+            <div class="card">
+                <div class="card-header">Efeito Estufa: Natural vs. Intensificado</div>
+                <div class="card-body">
+                    <p>O efeito estufa é um processo <strong>natural e vital</strong> que retém o calor e possibilita a vida no planeta. O problema atual reside no seu agravamento pela queima de combustíveis fósseis e desmatamento.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Gases Vilões (GEE):</strong> A alta concentração de <span class="dados-conjunto">Dióxido de Carbono (CO₂)</span> e <span class="dados-conjunto">Metano (CH₄)</span> impede a saída do excesso de calor para o espaço.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Consequências Globais</div>
+                <div class="card-body">
+                    <p>Os desdobramentos práticos do aquecimento global não se limitam à elevação da temperatura média, mas sim ao desequilíbrio ecológico completo.</p>
+                    <ul>
+                        <li><strong>Eventos Extremos:</strong> Ondas de calor mais intensas, furacões destrutivos e secas prolongadas.</li>
+                        <li><strong>Nível do Mar:</strong> Derretimento de calotas polares e geleiras continentais ameaçando cidades costeiras.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Página Educativa de Geografia • Estudos de Climatologia Dinâmica e Mudanças Globais</p>
+    </footer>
+
+</body>
+</html>

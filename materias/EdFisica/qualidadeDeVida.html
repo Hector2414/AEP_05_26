@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educação Física: Saúde e Qualidade de Vida</title>
+    <style>
+        :root {
+            --primary-color: #1e4d2b; /* Verde Floresta / Saúde, Vitalidade e Equilíbrio */
+            --secondary-color: #eab308; /* Amarelo-Sol / Energia, Foco e Bem-Estar */
+            --bg-color: #f4f7f5;
+            --card-bg: #ffffff;
+            --text-color: #1f2937;
+            --accent-color: #e5e7eb;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), #0f2e1b);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-bottom: 4px solid var(--secondary-color);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: #0f2e1b;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: var(--secondary-color);
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .intro {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+            font-size: 1.6rem;
+        }
+
+        .grid-conversacao {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .grid-conversacao {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid var(--accent-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .exemplo-box {
+            background-color: #f3f4f6;
+            padding: 0.8rem;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            margin-top: 1rem;
+            border-left: 3px solid var(--secondary-color);
+        }
+
+        .dados-conjunto {
+            font-family: monospace;
+            font-weight: bold;
+            color: #14532d;
+            background: #d1fae5;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #4b5563;
+            font-size: 0.9rem;
+            margin-top: 4rem;
+            border-top: 1px solid var(--accent-color);
+        }
+    </style>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Saúde e Qualidade de Vida</h1>
+        <p>A atividade física como pilar fundamental para o equilíbrio biopsicossocial</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="#beneficios">Benefícios Corporais</a></li>
+            <li><a href="#habitos">Hábitos Saudáveis</a></li>
+            <li><a href="#consciencia">Consciência Corporal</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h3>O Movimento Pró-Saúde</h3>
+            <p>Na Educação Física contemporânea, a abordagem sobre <strong>saúde e qualidade de vida</strong> foca na autonomia do indivíduo. O objetivo central é conscientizar sobre a importância de combater o sedentarismo e entender o movimento corporal não apenas como estética, mas como um fator determinante para a longevidade e a saúde mental.</p>
+        </section>
+
+        <h2 id="beneficios" class="section-title">1. Benefícios Fisiológicos e Mentais</h2>
+        <p>Os impactos diretos da prática regular de exercícios no funcionamento do organismo e no controle emocional.</p>
+
+        <div class="grid-conversacao">
+            
+            <div class="card">
+                <div class="card-header">Efeitos no Organismo (Físico)</div>
+                <div class="card-body">
+                    <p>A prática regular fortalece os sistemas vitais, atuando de forma preventiva contra diversas doenças crônicas não transmissíveis.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Melhorias Diretas:</strong><br>
+                        • <span class="dados-conjunto">Sistema Cardiovascular</span> (Coração mais eficiente e controle da pressão)<br>
+                        • <span class="dados-conjunto">Metabolismo Ativo</span> (Auxílio no controle glicêmico e lipídico)<br><br>
+                        
+                        <strong>Ganho Estrutural:</strong><br>
+                        Aumenta a densidade óssea e melhora a <span class="dados-conjunto">resistência muscular</span> geral.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Saúde Mental e Emocional</div>
+                <div class="card-body">
+                    <p>O corpo em movimento libera neurotransmissores essenciais para a regulação do humor, do sono e dos níveis de estresse cotidianos.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Hormônios Liberados:</strong><br>
+                        Endorfina, dopamina e serotonina.<br><br>
+                        
+                        <strong>Impacto Psicológico:</strong><br>
+                        Redução dos sintomas de <span class="dados-conjunto">ansiedade e estresse</span>, melhora expressiva na qualidade do sono e elevação da autoimagem.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 id="habitos" class="section-title">2. Estilo de Vida Ativo e Consciente</h2>
+        <p>A construção de uma rotina equilibrada que integre atividades físicas, descanso e nutrição de forma sustentável.</p>
+
+        <div class="grid-conversacao">
+            
+            <div class="card">
+                <div class="card-header">Combate ao Sedentarismo</div>
+                <div class="card-body">
+                    <p>Pequenas mudanças diárias ajudam a atingir as metas de movimentação recomendadas pelos órgãos internacionais de saúde.</p>
+                    
+                    <div class="exemplo-box">
+                        • Recomendações ➔ Mínimo de <span class="dados-conjunto">150 minutos</span> semanais<br>
+                        • No Cotidiano ➔ Optar por escadas e <span class="dados-conjunto">caminhadas curtas</span><br>
+                        • Lazer Ativo ➔ Praticar esportes, dançar ou andar de bicicleta
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Ergonomia e Postura</div>
+                <div class="card-body">
+                    <p>Compreender os limites do próprio corpo e adotar posturas corretas no ambiente escolar, de trabalho e nos momentos de descanso.</p>
+                    
+                    <div class="exemplo-box">
+                        • Consciência ➔ Evitar longos períodos na <span class="dados-conjunto">mesma posição</span><br>
+                        • Alongamentos ➔ Pausas ativas para <span class="dados-conjunto">flexibilidade muscular</span><br>
+                        • Ergonomia ➔ Ajustar a altura de telas e cadeiras
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="grid-column: 1 / -1;" id="consciencia">
+                <div class="card-header">Diálogo Orientativo: Atividade Física Escolar</div>
+                <div class="card-body">
+                    <p>Simulação pedagógica de uma conversa de orientação entre professor e aluno sobre a escolha de práticas saudáveis.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Aluno:</strong> Professor, eu preciso entrar em uma academia para ter qualidade de vida?<br>
+                        <strong>Professor:</strong> De forma alguma. A musculação é ótima, mas o melhor exercício é <span class="dados-conjunto">aquele que você sente prazer</span> em realizar com constância.<br>
+                        <strong>Aluno:</strong> Entendi! Então se eu jogar futebol com meus amigos ou caminhar no parque já conta?<br>
+                        <strong>Professor:</strong> Com certeza! O segredo é se manter ativo e transformar o movimento em um <span class="dados-conjunto">hábito diário agradável</span>.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Página Educativa de Educação Física • Conteúdo Promocional de Saúde, Bem-Estar e Estilo de Vida Ativo</p>
+    </footer>
+
+</body>
+</html>

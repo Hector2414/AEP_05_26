@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História da Arte: A Música na Arte</title>
+    <style>
+        :root {
+            --primary-color: #1e293b; /* Azul-Noturno / Salas de Concerto e Sobriedade */
+            --secondary-color: #9d174d; /* Vinho Profundo / Paixão e Expressão Musical */
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #0f172a;
+            --accent-color: #f1f5f9;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), #4c1d95);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-bottom: 4px solid var(--secondary-color);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: #0f172a;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: var(--secondary-color);
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .intro {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+            font-size: 1.6rem;
+        }
+
+        .grid-conversacao {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .grid-conversacao {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid var(--accent-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .exemplo-box {
+            background-color: #f8fafc;
+            padding: 0.8rem;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            margin-top: 1rem;
+            border-left: 3px solid var(--secondary-color);
+        }
+
+        .dados-conjunto {
+            font-family: monospace;
+            font-weight: bold;
+            color: #1e1b4b;
+            background: #e2e8f0;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-top: 4rem;
+            border-top: 1px solid var(--accent-color);
+        }
+    </style>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>A Música na Arte</h1>
+        <p>A intersecção histórica entre o som, as artes visuais e a sinestesia</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="#representacao">Representação</a></li>
+            <li><a href="#sinestesia">Abstração e Som</a></li>
+            <li><a href="#dialogo">Conexões</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h3>A Irmandade das Musas</h3>
+            <p>A relação entre a <strong>música e as artes visuais</strong> remonta à antiguidade clássica. Ambas compartilham conceitos fundamentais como ritmo, harmonia, tom e composição. Seja como tema de uma pintura ou como força motriz por trás da abstração moderna, a música moldou profundamente a forma como os artistas enxergam e pintam o mundo.</p>
+        </section>
+
+        <h2 id="representacao" class="section-title">1. Iconografia e Simbolismo Musical</h2>
+        <p>Durante séculos, instrumentos musicais e instrumentistas foram pintados para transmitir mensagens sociais, religiosas ou morais.</p>
+
+        <div class="grid-conversacao">
+            
+            <div class="card">
+                <div class="card-header">O Barroco e a Natureza-Morta</div>
+                <div class="card-body">
+                    <p>No século XVII, os instrumentos apareciam frequentemente em pinturas do gênero <em>Vanitas</em>, simbolizando a natureza efêmera da vida.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Principais Símbolos:</strong><br>
+                        • <span class="dados-conjunto">Alaúdes e Flautas</span> (Metáforas para os prazeres sensoriais transitórios)<br>
+                        • <span class="dados-conjunto">Partituras Abertas</span> (A música que ecoa e desaparece no ar)<br><br>
+                        
+                        <strong>Artistas de Destaque:</strong><br>
+                        Johannes Vermeer e Evaristo Baschenis dominaram a <span class="dados-conjunto">precisão geométrica</span> dos instrumentos em suas telas.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">O Cubismo de Instrumentos</div>
+                <div class="card-body">
+                    <p>No início do século XX, os cubistas desconstruíram a anatomia dos instrumentos musicais para explorar novas perspectivas espaciais.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Objetos Frequentes:</strong><br>
+                        Violinos, violões e bandolins.<br><br>
+                        
+                        <strong>A Abordagem:</strong><br>
+                        Artistas como Pablo Picasso e Georges Braque usavam a <span class="dados-conjunto">fragmentação das formas</span> para criar uma espécie de "ritmo visual" que imitava a própria estrutura de uma música.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 id="sinestesia" class="section-title">2. Sinestesia: Pintando o Som</h2>
+        <p>A busca por traduzir notas e acordes musicais diretamente em cores, texturas e linhas abstratas nas telas.</p>
+
+        <div class="grid-conversacao">
+            
+            <div class="card">
+                <div class="card-header">Kandinsky e a Orquestra Visual</div>
+                <div class="card-body">
+                    <p>Wassily Kandinsky possuía sinestesia e associava timbres musicais a cores específicas, acreditando que a pintura deveria ser tão abstrata quanto a música.</p>
+                    
+                    <div class="exemplo-box">
+                        • Azul ➔ Associado ao som do <span class="dados-conjunto">Violoncelo</span><br>
+                        • Amarelo ➔ Associado ao som do <span class="dados-conjunto">Trompete</span><br>
+                        • Vermelho ➔ Sons fortes e intensos como uma tuba
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">O Abstracionismo Geométrico</div>
+                <div class="card-body">
+                    <p>Outros pintores modernos utilizaram estruturas matemáticas do Jazz e da música clássica para organizar suas composições geométricas.</p>
+                    
+                    <div class="exemplo-box">
+                        • Piet Mondrian ➔ Inspirado pelo ritmo síncope do <span class="dados-conjunto">Boogie-Woogie</span><br>
+                        • Paul Klee ➔ Aplicava <span class="dados-conjunto">polifonia musical</span> em suas aquarelas coloridas
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="grid-column: 1 / -1;" id="dialogo">
+                <div class="card-header">Diálogo Analítico: Som versus Imagem</div>
+                <div class="card-body">
+                    <p>Uma simulação de debate acadêmico analisando como a música liberta a pintura da necessidade de retratar o mundo real.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Professor:</strong> Por que dizemos que a música é a arte mais abstrata de todas?<br>
+                        <strong>Aluno:</strong> Porque um acorde de piano não precisa se parecer com uma árvore ou um cavalo para ser belo. <span class="dados-conjunto">Ele apenas existe no tempo</span>.<br>
+                        <strong>Professor:</strong> Exato. E foi vendo isso que os pintores modernos pensaram: se a música pode mover a alma sem desenhar a realidade, as cores e as linhas também podem.<br>
+                        <strong>Aluno:</strong> Foi aí que nasceu o <span class="dados-conjunto">Abstracionismo</span>, buscando a pureza da música.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Página Educativa de História da Arte • Conteúdo sobre a Relação Interdisciplinar entre Música e Pintura</p>
+    </footer>
+
+</body>
+</html>

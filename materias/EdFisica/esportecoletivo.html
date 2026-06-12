@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educação Física: Esportes Coletivos</title>
+    <style>
+        :root {
+            --primary-color: #1e40af; /* Azul Esportivo / Dinamismo e Cooperação */
+            --secondary-color: #ea580c; /* Laranja Vibrante / Energia e Ação */
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #1e293b;
+            --accent-color: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), #0f172a);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-bottom: 4px solid var(--secondary-color);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: #0f172a;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: var(--secondary-color);
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .intro {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+            font-size: 1.6rem;
+        }
+
+        .grid-conversacao {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .grid-conversacao {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid var(--accent-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .exemplo-box {
+            background-color: #f1f5f9;
+            padding: 0.8rem;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            margin-top: 1rem;
+            border-left: 3px solid var(--secondary-color);
+        }
+
+        .dados-conjunto {
+            font-family: monospace;
+            font-weight: bold;
+            color: #1e3a8a;
+            background: #e2e8f0;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-top: 4rem;
+            border-top: 1px solid var(--accent-color);
+        }
+    </style>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Esportes Coletivos</h1>
+        <p>Aprendizado motriz, inclusão e o valor do trabalho em equipe na escola</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/home.html">Home</a></li>
+            <li><a href="#valores">Valores Pedagógicos</a></li>
+            <li><a href="#modalidades">Modalidades</a></li>
+            <li><a href="#regras">Regras e Tática</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h3>Muito Além do Jogo</h3>
+            <p>No contexto da <strong>Educação Física escolar</strong>, os esportes coletivos vão muito além da busca por rendimento técnico ou vitórias. Eles constituem uma rica ferramenta pedagógica para o desenvolvimento psicomotor, a socialização, o respeito à diversidade e a construção da cidadania através do movimento.</p>
+        </section>
+
+        <h2 id="valores" class="section-title">1. Pilares Socioculturais e Motores</h2>
+        <p>Os principais objetivos trabalhados pelo professor ao introduzir jogos em equipe nas aulas práticas.</p>
+
+        <div class="grid-conversacao">
+            
+            <div class="card">
+                <div class="card-header">Cooperação vs. Competição</div>
+                <div class="card-body">
+                    <p>Aprender a coordenar ações individuais com o grupo. O foco é fazer o aluno entender que o coletivo depende da colaboração mútua.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Competências Sociais:</strong><br>
+                        • <span class="dados-conjunto">Empatia e Respeito</span> (Lidar com erros próprios e dos colegas)<br>
+                        • <span class="dados-conjunto">Inclusão Escolar</span> (Adaptar regras para que todos joguem)<br><br>
+                        
+                        <strong>Visão Pedagógica:</strong><br>
+                        A competição deve ser saudável, priorizando o <span class="dados-conjunto">Fair Play</span> (jogo limpo).
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Desenvolvimento Motor</div>
+                <div class="card-body">
+                    <p>O aprimoramento das habilidades fundamentais aplicadas ao jogo, ampliando o repertório de movimentos corporais do estudante.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Habilidades Trabalhadas:</strong><br>
+                        Locomoção, estabilização e manipulação de objetos.<br><br>
+                        
+                        <strong>Fundamentos Práticos:</strong><br>
+                        Ações como <span class="dados-conjunto">passar, driblar, chutar</span> e arremessar desenvolvem a coordenação óculo-manual e óculo-pedal dos alunos.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 id="modalidades" class="section-title">2. Modalidades Tradicionais e Tática Básica</h2>
+        <p>Os esportes de cooperação/invasão mais comuns na grade curricular e como eles estimulam o raciocínio rápido.</p>
+
+        <div class="grid-conversacao">
+            
+            <div class="card">
+                <div class="card-header">Esportes de Invasão</div>
+                <div class="card-body">
+                    <p>Modalidades em que as equipes precisam avançar em direção ao espaço do adversário para pontuar, defendendo simultaneamente sua meta.</p>
+                    
+                    <div class="exemplo-box">
+                        • Futsal ➔ <span class="dados-conjunto">Dinâmica de passe</span> e ocupação de espaço<br>
+                        • Basquetebol ➔ <span class="dados-conjunto">Ritmo e transição</span> rápida de jogadas<br>
+                        • Handebol ➔ Movimentação coordenada da barreira defensiva
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">Esportes de Rede / Campo</div>
+                <div class="card-body">
+                    <p>Jogos que priorizam a precisão e o posicionamento estratégico, com menor contato físico direto entre os oponentes.</p>
+                    
+                    <div class="exemplo-box">
+                        • Voleibol ➔ <span class="dados-conjunto">Três toques</span> (Construção coletiva do ataque)<br>
+                        • Queimada ➔ <span class="dados-conjunto">Noção espaço-temporal</span> e esquiva<br>
+                        • Revezamentos ➔ Trabalho de sincronia extrema
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="grid-column: 1 / -1;" id="regras">
+                <div class="card-header">Estudo de Caso: Resolução de Conflitos na Quadra</div>
+                <div class="card-body">
+                    <p>Uma simulação didática de como as discussões táticas em aula ensinam mediação e estratégia coletiva.</p>
+                    
+                    <div class="exemplo-box">
+                        <strong>Professor:</strong> Turma, o time adversário está conseguindo invadir nossa área com facilidade. O que podemos mudar?<br>
+                        <strong>Aluno A:</strong> Estamos todos correndo atrás da bola ao mesmo tempo e deixando os lados da quadra vazios.<br>
+                        <strong>Aluno B:</strong> É verdade! Precisamos fazer uma <span class="dados-conjunto">marcação por zona</span>. Cada um cuida de um espaço.<br>
+                        <strong>Professor:</strong> Perfeito. Essa percepção espacial e a <span class="dados-conjunto">comunicação verbal</span> na defesa são a base de qualquer tática coletiva.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Página Educativa de Educação Física • Conteúdo Metodológico sobre Esportes, Cultura Corporal e Saúde</p>
+    </footer>
+
+</body>
+</html>
